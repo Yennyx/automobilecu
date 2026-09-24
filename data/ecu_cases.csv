@@ -1,0 +1,2 @@
+case_id,date,manufacturer,vehicle_model,model_year,engine,fuel,mileage_km,ecu_category,ecu_name,ecu_part_no,ecu_hw_no,ecu_sw_no,dtc,symptom,can_error,power_ground_check,root_cause,repair_method,replaced_parts,repair_time_min,success,recurred,notes,source
+CASE-0001,2026-09-01,,,,,,,,,,,,,,,,,,,,,,,,
