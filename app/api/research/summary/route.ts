@@ -38,8 +38,10 @@ function threeLines(response: unknown): string[] | null {
   if (candidates.length !== 3) {
     candidates = cleaned.replace(/\s+/g, " ").split(/(?<=[.!?。！？])\s+/).filter(Boolean);
   }
-  const lines = candidates.map(line => typeof line === "string" ? line.trim() : "");
-  return lines.length === 3 && lines.every(line => line.length >= 12 && line.length <= 400 && /[가-힣]/.test(line)) ? lines : null;
+  const lines = candidates.map(line => typeof line === "string" ? line.trim() : "")
+    .filter(line => line.length >= 12 && line.length <= 400 && /[가-힣]/.test(line))
+    .slice(0, 3);
+  return lines.length === 3 ? lines : null;
 }
 
 export async function GET(request: Request) {
@@ -73,7 +75,18 @@ export async function GET(request: Request) {
       max_tokens: 320,
       temperature: 0.1,
     });
-    const lines = threeLines(result.response);
+    let lines = threeLines(result.response);
+    if (!lines) {
+      const retry = await env.AI.run("@cf/meta/llama-3.1-8b-instruct-fp8", {
+        messages: [
+          { role: "system", content: "Write Korean only. Answer with exactly three numbered, complete sentences. Each sentence must state a fact explicitly present in the supplied abstract. No introduction or conclusion." },
+          { role: "user", content: `Abstract: ${abstract.slice(0, 4500)}\n1. 연구 목적\n2. 사용한 방법\n3. 확인된 결과 또는 결론` },
+        ],
+        max_tokens: 400,
+        temperature: 0,
+      });
+      lines = threeLines(retry.response);
+    }
     if (!lines) return Response.json({ error: "요약 형식 검증에 실패했습니다." }, { status: 502 });
     await env.RESEARCH_KV.put(key, JSON.stringify(lines), { expirationTtl: 60 * 60 * 24 * 30 });
     return Response.json({ doi: paper.doi, lines, model: "Cloudflare Workers AI · Llama 3.1 8B", cached: false });
