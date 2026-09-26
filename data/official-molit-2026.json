@@ -1,0 +1,74 @@
+[
+  {
+    "month": "1월",
+    "period": "2026.01",
+    "busClass": 1814,
+    "freight": 10077,
+    "special": 472,
+    "sourceUrl": "https://stat.molit.go.kr/portal/common/downLoadFile.do?oFileName=2026%EB%85%84+01%EC%9B%94+%EC%9E%90%EB%8F%99%EC%B0%A8+%EB%93%B1%EB%A1%9D%EC%9E%90%EB%A3%8C+%ED%86%B5%EA%B3%84.xlsx&rFileName=2026%EB%85%84+01%EC%9B%94+%EC%9E%90%EB%8F%99%EC%B0%A8+%EB%93%B1%EB%A1%9D%EC%9E%90%EB%A3%8C+%ED%86%B5%EA%B3%84.xlsx&midpath=%2Fstat_file%2F",
+    "sha256": "c158e5fc25a196d2238c9c4b94cfff22aed3098898c1f97a8c3ab15ba9a20cf7"
+  },
+  {
+    "month": "2월",
+    "period": "2026.02",
+    "busClass": 1471,
+    "freight": 14906,
+    "special": 497,
+    "sourceUrl": "https://stat.molit.go.kr/portal/common/downLoadFile.do?oFileName=2026%EB%85%84+02%EC%9B%94+%EC%9E%90%EB%8F%99%EC%B0%A8+%EB%93%B1%EB%A1%9D%EC%9E%90%EB%A3%8C+%ED%86%B5%EA%B3%84.xlsx&rFileName=2026%EB%85%84+02%EC%9B%94+%EC%9E%90%EB%8F%99%EC%B0%A8+%EB%93%B1%EB%A1%9D%EC%9E%90%EB%A3%8C+%ED%86%B5%EA%B3%84.xlsx&midpath=%2Fstat_file%2F",
+    "sha256": "0884bba4aeef9b2c0fa85c2e4e5d6713f3efea90bb2b1c1d669a7dac1b681865"
+  },
+  {
+    "month": "3월",
+    "period": "2026.03",
+    "busClass": 2030,
+    "freight": 18331,
+    "special": 460,
+    "sourceUrl": "https://stat.molit.go.kr/portal/common/downLoadFile.do?oFileName=2026%EB%85%84+03%EC%9B%94+%EC%9E%90%EB%8F%99%EC%B0%A8+%EB%93%B1%EB%A1%9D%EC%9E%90%EB%A3%8C+%ED%86%B5%EA%B3%84.xlsx&rFileName=2026%EB%85%84+03%EC%9B%94+%EC%9E%90%EB%8F%99%EC%B0%A8+%EB%93%B1%EB%A1%9D%EC%9E%90%EB%A3%8C+%ED%86%B5%EA%B3%84.xlsx&midpath=%2Fstat_file%2F",
+    "sha256": "59c3515ea209c440d6d4c7512741188a8657e7d903752064816354e1224e5429"
+  },
+  {
+    "month": "4월",
+    "period": "2026.04",
+    "busClass": 2039,
+    "freight": 15580,
+    "special": 510,
+    "sourceUrl": "https://stat.molit.go.kr/portal/common/downLoadFile.do?oFileName=2026%EB%85%84+4%EC%9B%94+%EC%9E%90%EB%8F%99%EC%B0%A8+%EB%93%B1%EB%A1%9D%EC%9E%90%EB%A3%8C+%ED%86%B5%EA%B3%84.xlsx&rFileName=2026%EB%85%84+4%EC%9B%94+%EC%9E%90%EB%8F%99%EC%B0%A8+%EB%93%B1%EB%A1%9D%EC%9E%90%EB%A3%8C+%ED%86%B5%EA%B3%84.xlsx&midpath=%2Fstat_file%2F",
+    "sha256": "07dbaf13ab65d5b7e31d01379c318dd18aa44cf8b89463c0c5eb14c0ea96c1f2"
+  },
+  {
+    "month": "5월",
+    "period": "2026.05",
+    "busClass": 1616,
+    "freight": 12673,
+    "special": 388,
+    "sourceUrl": "https://stat.molit.go.kr/portal/common/downLoadFile.do?oFileName=2026%EB%85%84+05%EC%9B%94+%EC%9E%90%EB%8F%99%EC%B0%A8+%EB%93%B1%EB%A1%9D%EC%9E%90%EB%A3%8C+%ED%86%B5%EA%B3%84.xlsx&rFileName=2026%EB%85%84+05%EC%9B%94+%EC%9E%90%EB%8F%99%EC%B0%A8+%EB%93%B1%EB%A1%9D%EC%9E%90%EB%A3%8C+%ED%86%B5%EA%B3%84.xlsx&midpath=%2Fstat_file%2F",
+    "sha256": "cfe02c35a9e052d91d8e7716e2e2e8d65294083ed1112cbff7c42872e8c90b28"
+  },
+  {
+    "month": "6월",
+    "period": "2026.06",
+    "busClass": 2350,
+    "freight": 14052,
+    "special": 448,
+    "sourceUrl": "https://stat.molit.go.kr/portal/common/downLoadFile.do?oFileName=2026%EB%85%84+06%EC%9B%94+%EC%9E%90%EB%8F%99%EC%B0%A8+%EB%93%B1%EB%A1%9D%EC%9E%90%EB%A3%8C+%ED%86%B5%EA%B3%84.xlsx&rFileName=2026%EB%85%84+06%EC%9B%94+%EC%9E%90%EB%8F%99%EC%B0%A8+%EB%93%B1%EB%A1%9D%EC%9E%90%EB%A3%8C+%ED%86%B5%EA%B3%84.xlsx&midpath=%2Fstat_file%2F",
+    "sha256": "525f65000d3e60f7950acccf83971b6da7259839016166cd220bad1987cff816"
+  },
+  {
+    "month": "7월",
+    "period": "2026.07",
+    "busClass": 2794,
+    "freight": 13941,
+    "special": 389,
+    "sourceUrl": "https://stat.molit.go.kr/portal/common/downLoadFile.do?oFileName=2026%EB%85%84+07%EC%9B%94+%EC%9E%90%EB%8F%99%EC%B0%A8+%EB%93%B1%EB%A1%9D%EC%9E%90%EB%A3%8C+%ED%86%B5%EA%B3%84.xlsx&rFileName=2026%EB%85%84+07%EC%9B%94+%EC%9E%90%EB%8F%99%EC%B0%A8+%EB%93%B1%EB%A1%9D%EC%9E%90%EB%A3%8C+%ED%86%B5%EA%B3%84.xlsx&midpath=%2Fstat_file%2F",
+    "sha256": "5aac8b6dec5a2392ef6e72a75c800f795c5d8e443eb3a67789d5f6f460e7559a"
+  },
+  {
+    "month": "8월",
+    "period": "2026.08",
+    "busClass": 1695,
+    "freight": 11589,
+    "special": 324,
+    "sourceUrl": "https://stat.molit.go.kr/portal/common/downLoadFile.do?oFileName=2026%EB%85%84+08%EC%9B%94+%EC%9E%90%EB%8F%99%EC%B0%A8+%EB%93%B1%EB%A1%9D%EC%9E%90%EB%A3%8C+%ED%86%B5%EA%B3%84.xlsx&rFileName=2026%EB%85%84+08%EC%9B%94+%EC%9E%90%EB%8F%99%EC%B0%A8+%EB%93%B1%EB%A1%9D%EC%9E%90%EB%A3%8C+%ED%86%B5%EA%B3%84.xlsx&midpath=%2Fstat_file%2F",
+    "sha256": "fce1acd8b06d2ceab256c17a856f3be73733057f93cdb1ed3ec980661d8cc1bf"
+  }
+]

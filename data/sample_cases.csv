@@ -1,2 +1,0 @@
-case_id,date,manufacturer,vehicle_model,model_year,engine,fuel,mileage_km,ecu_category,ecu_name,ecu_part_no,ecu_hw_no,ecu_sw_no,dtc,symptom,can_error,power_ground_check,root_cause,repair_method,replaced_parts,repair_time_min,success,recurred,notes,source
-DEMO-DO-NOT-USE,2026-09-01,DEMO,DEMO,2020,DEMO,diesel,100000,Powertrain,Engine ECU,DEMO,DEMO,DEMO,P0000,DEMO DATA - 실제 수리건 아님,none,pass,DEMO,DEMO,none,60,true,false,화면 기능 확인용 샘플,DEMO

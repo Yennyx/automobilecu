@@ -3,18 +3,17 @@ export type Source = {
   name: string;
   url: string;
   provider: string;
-  kind: "official" | "publisher" | "sample";
+  kind: "official" | "publisher";
   accessedAt: string | null;
 };
 
 export const sources: Record<string, Source> = {
-  demo: { id: "demo", name: "시연용 생성 데이터", provider: "allaboutecu", url: "/methodology", kind: "sample", accessedAt: null },
-  molit: { id: "molit", name: "자동차등록대수현황 시도별 (form_id 5498, style_num 2)", provider: "국토교통부 통계누리", url: "https://stat.molit.go.kr/portal/openapi/main.do", kind: "official", accessedAt: "2026-09-26" },
+  molit: { id: "molit", name: "자동차등록현황보고 · 2026년 월별 XLSX", provider: "국토교통부 통계누리", url: "https://stat.molit.go.kr/portal/cate/statMetaView.do?hFormId=1244&hRsId=58", kind: "official", accessedAt: "2026-09-26" },
   tsRegistration: { id: "tsRegistration", name: "신규 자동차 등록 정보 API", provider: "한국교통안전공단", url: "https://www.data.go.kr/data/15059401/openapi.do", kind: "official", accessedAt: "2026-09-26" },
   kia: { id: "kia", name: "Granbird 공식 가격표", provider: "Kia", url: "https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_new-granbird.pdf", kind: "official", accessedAt: "2026-09-26" },
   ev: { id: "ev", name: "전기자동차 충전소 정보 API", provider: "한국환경공단", url: "https://www.data.go.kr/data/15076352/openapi.do", kind: "official", accessedAt: "2026-09-26" },
   hydrogen: { id: "hydrogen", name: "수소충전소 운영 정보 API", provider: "한국석유관리원", url: "https://www.data.go.kr/data/15133332/openapi.do", kind: "official", accessedAt: "2026-09-26" },
-  recall: { id: "recall", name: "자동차결함 리콜현황", provider: "한국교통안전공단", url: "https://www.data.go.kr/data/3048950/fileData.do", kind: "official", accessedAt: "2026-09-26" },
+  recall: { id: "recall", name: "자동차리콜센터", provider: "국토교통부", url: "https://www.car.go.kr/", kind: "official", accessedAt: "2026-09-26" },
   scrap: { id: "scrap", name: "2026 조기폐차 지원 안내", provider: "기후에너지환경부", url: "https://www.me.go.kr/home/web/board/read.do?boardMasterId=1&boardId=1841450", kind: "official", accessedAt: "2026-09-26" },
   euro7: { id: "euro7", name: "Regulation (EU) 2024/1257", provider: "EUR-Lex", url: "https://eur-lex.europa.eu/eli/reg/2024/1257/oj/eng", kind: "official", accessedAt: "2026-09-26" },
   sae: { id: "sae", name: "J1939-73 Diagnostics", provider: "SAE International", url: "https://saemobilus.sae.org/standards/j193973_201705-application-layer-diagnostics", kind: "publisher", accessedAt: "2026-09-26" },

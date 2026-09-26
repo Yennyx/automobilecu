@@ -1,2 +1,0 @@
-case_id,date,manufacturer,model,year,engine,mileage,usage,ecu_name,hw_no,sw_no,ecu_supplier,communication,customer_symptom,dtc,power_ground_check,can_check,root_cause,repair_method,replaced_parts,turnaround_hours,result,recurred,notes
-CASE-0001,2026-09-24,기아,그랜버드,2020,,350000,전세버스,Engine ECU,,,,CAN,,,,,,,,,,
