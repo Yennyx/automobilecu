@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Refresh DOI-verified research metadata from OpenAlex.
 
-The published link is always the DOI resolver. The source abstract is stored
-with its digest so summaries can be generated without a live OpenAlex request.
+The published link is always the DOI resolver. Keep OpenAlex's inverted-index
+form for abstracts; reconstruct only inside the Worker when summarizing.
 """
 from __future__ import annotations
 
@@ -81,7 +81,7 @@ def normalize(work: dict) -> tuple[dict, str] | None:
         "authors": authors, "institution": institution, "year": work["publication_year"],
         "publishedDate": work.get("publication_date"), "originalUrl": doi_url,
         "metadataUrl": work["id"].replace("https://openalex.org/", "https://api.openalex.org/works/"),
-        "abstract": abstract,
+        "abstractInvertedIndex": work.get("abstract_inverted_index") or {},
         "abstractSha256": hashlib.sha256(abstract.encode()).hexdigest(), "retrievedAt": date.today().isoformat(),
     }
     return record, abstract
