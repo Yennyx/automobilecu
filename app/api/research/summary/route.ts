@@ -19,8 +19,24 @@ async function sha256(value: string): Promise<string> {
 }
 
 function threeLines(response: string): string[] | null {
-  const lines = response.split(/\r?\n/).map(line => line.trim().replace(/^[-*0-9.]+\s*/, "")).filter(Boolean);
-  return lines.length === 3 && lines.every(line => line.length >= 12 && line.length <= 300) ? lines : null;
+  const cleaned = response.trim().replace(/^```(?:json)?\s*|\s*```$/g, "");
+  let candidates: unknown[] = [];
+  try {
+    const parsed = JSON.parse(cleaned);
+    if (Array.isArray(parsed)) candidates = parsed;
+    else if (parsed && typeof parsed === "object" && "lines" in parsed && Array.isArray(parsed.lines)) candidates = parsed.lines;
+  } catch {
+    // Models may return numbered lines or one paragraph instead of JSON.
+  }
+  if (!candidates.length) {
+    candidates = cleaned.split(/\r?\n|(?=\s*[1-3][.)]\s+)/)
+      .map(line => line.trim().replace(/^[-*•\s]*[1-3]?[.)]?\s*/, "")).filter(Boolean);
+  }
+  if (candidates.length !== 3) {
+    candidates = cleaned.replace(/\s+/g, " ").split(/(?<=[.!?。！？])\s+/).filter(Boolean);
+  }
+  const lines = candidates.map(line => typeof line === "string" ? line.trim() : "");
+  return lines.length === 3 && lines.every(line => line.length >= 12 && line.length <= 400 && /[가-힣]/.test(line)) ? lines : null;
 }
 
 export async function GET(request: Request) {
@@ -50,8 +66,8 @@ export async function GET(request: Request) {
     }
     const result = await env.AI.run("@cf/meta/llama-3.1-8b-instruct-fp8", {
       messages: [
-        { role: "system", content: "You summarize academic abstracts faithfully in Korean. Return exactly three Korean sentences, each on its own line. No heading, bullets, or invented numbers." },
-        { role: "user", content: `Title: ${paper.title}\nDOI: ${paper.doi}\nAbstract: ${abstract.slice(0, 6000)}\nWrite three factual Korean sentences using only the abstract.` },
+        { role: "system", content: "Summarize academic abstracts faithfully in Korean. Output only a JSON array of exactly three Korean sentences. Use only claims in the abstract. Do not invent numbers or add a heading." },
+        { role: "user", content: `Title: ${paper.title}\nDOI: ${paper.doi}\nAbstract: ${abstract.slice(0, 6000)}\nReturn JSON like [\"첫 문장.\",\"둘째 문장.\",\"셋째 문장.\"].` },
       ],
       max_tokens: 320,
       temperature: 0.1,
