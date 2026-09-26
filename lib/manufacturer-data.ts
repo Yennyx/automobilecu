@@ -24,12 +24,12 @@ export const manufacturers: Manufacturer[] = [
   { id: "kgm", name: "KG모빌리티", origin: "국내", augustRegistrations: null, ytdRegistrations: null, sourceName: "KAMA 생산판매통계", sourceUrl: kamaStatistics },
   { id: "gm-korea", name: "한국GM", origin: "국내", augustRegistrations: null, ytdRegistrations: null, sourceName: "KAMA 생산판매통계", sourceUrl: kamaStatistics },
   { id: "renault-korea", name: "르노코리아", origin: "국내", augustRegistrations: null, ytdRegistrations: null, sourceName: "KAMA 생산판매통계", sourceUrl: kamaStatistics },
-  { id: "volvo-trucks", name: "볼보트럭", origin: "수입", augustRegistrations: 79, ytdRegistrations: 965, sourceName: "KAIDA 2026년 8월 발표", sourceUrl: kaidaPublishedRelease },
-  { id: "scania", name: "스카니아", origin: "수입", augustRegistrations: 58, ytdRegistrations: 509, sourceName: "KAIDA 2026년 8월 발표", sourceUrl: kaidaPublishedRelease },
-  { id: "man", name: "MAN", origin: "수입", augustRegistrations: 41, ytdRegistrations: 522, sourceName: "KAIDA 2026년 8월 발표", sourceUrl: kaidaPublishedRelease },
-  { id: "mercedes-benz", name: "메르세데스-벤츠", origin: "수입", augustRegistrations: 26, ytdRegistrations: 308, sourceName: "KAIDA 2026년 8월 발표", sourceUrl: kaidaPublishedRelease },
-  { id: "mercedes-benz-van", name: "메르세데스-벤츠 밴", origin: "수입", augustRegistrations: 9, ytdRegistrations: 105, sourceName: "KAIDA 2026년 8월 발표", sourceUrl: kaidaPublishedRelease },
-  { id: "iveco", name: "이베코", origin: "수입", augustRegistrations: 8, ytdRegistrations: 83, sourceName: "KAIDA 2026년 8월 발표", sourceUrl: kaidaPublishedRelease },
+  { id: "volvo-trucks", name: "볼보트럭", origin: "수입", augustRegistrations: 79, ytdRegistrations: 965, sourceName: "KAIDA 발표 · 한국경제 게재", sourceUrl: kaidaPublishedRelease },
+  { id: "scania", name: "스카니아", origin: "수입", augustRegistrations: 58, ytdRegistrations: 509, sourceName: "KAIDA 발표 · 한국경제 게재", sourceUrl: kaidaPublishedRelease },
+  { id: "man", name: "MAN", origin: "수입", augustRegistrations: 41, ytdRegistrations: 522, sourceName: "KAIDA 발표 · 한국경제 게재", sourceUrl: kaidaPublishedRelease },
+  { id: "mercedes-benz", name: "메르세데스-벤츠", origin: "수입", augustRegistrations: 26, ytdRegistrations: 308, sourceName: "KAIDA 발표 · 한국경제 게재", sourceUrl: kaidaPublishedRelease },
+  { id: "mercedes-benz-van", name: "메르세데스-벤츠 밴", origin: "수입", augustRegistrations: 9, ytdRegistrations: 105, sourceName: "KAIDA 발표 · 한국경제 게재", sourceUrl: kaidaPublishedRelease },
+  { id: "iveco", name: "이베코", origin: "수입", augustRegistrations: 8, ytdRegistrations: 83, sourceName: "KAIDA 발표 · 한국경제 게재", sourceUrl: kaidaPublishedRelease },
 ];
 
 export const verifiedImportedManufacturers = manufacturers.filter(
