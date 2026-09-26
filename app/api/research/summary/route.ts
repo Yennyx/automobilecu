@@ -4,7 +4,7 @@ import papers from "@/data/research-official.json";
 export const dynamic = "force-dynamic";
 
 type Work = { abstract_inverted_index?: Record<string, number[]> };
-type AI = { run: (model: string, input: { messages: { role: string; content: string }[]; max_tokens: number; temperature: number }) => Promise<{ response?: string }> };
+type AI = { run: (model: string, input: { messages: { role: string; content: string }[]; max_tokens: number; temperature: number; response_format: object }) => Promise<{ response?: unknown }> };
 type KV = { get: (key: string) => Promise<string | null>; put: (key: string, value: string, options: { expirationTtl: number }) => Promise<void> };
 
 function abstractFrom(index: Record<string, number[]>): string {
@@ -18,13 +18,17 @@ async function sha256(value: string): Promise<string> {
     .map(byte => byte.toString(16).padStart(2, "0")).join("");
 }
 
-function threeLines(response: string): string[] | null {
-  const cleaned = response.trim().replace(/^```(?:json)?\s*|\s*```$/g, "");
+function threeLines(response: unknown): string[] | null {
+  const cleaned = typeof response === "string" ? response.trim().replace(/^```(?:json)?\s*|\s*```$/g, "") : "";
   let candidates: unknown[] = [];
+  let parsed: unknown = response;
   try {
-    const parsed = JSON.parse(cleaned);
+    if (cleaned) parsed = JSON.parse(cleaned);
     if (Array.isArray(parsed)) candidates = parsed;
-    else if (parsed && typeof parsed === "object" && "lines" in parsed && Array.isArray(parsed.lines)) candidates = parsed.lines;
+    else if (parsed && typeof parsed === "object") {
+      if ("lines" in parsed && Array.isArray(parsed.lines)) candidates = parsed.lines;
+      else if ("line1" in parsed && "line2" in parsed && "line3" in parsed) candidates = [parsed.line1, parsed.line2, parsed.line3];
+    }
   } catch {
     // Models may return numbered lines or one paragraph instead of JSON.
   }
@@ -52,7 +56,7 @@ export async function GET(request: Request) {
     return Response.json({ error: "요약 서비스가 연결되지 않았습니다." }, { status: 503 });
   }
 
-  const key = `summary:llama31:v1:${paper.doi}:${paper.abstractSha256}`;
+  const key = `summary:llama31-json:v1:${paper.doi}:${paper.abstractSha256}`;
   const cached = await env.RESEARCH_KV.get(key);
   if (cached) return Response.json({ doi: paper.doi, lines: JSON.parse(cached), model: "Cloudflare Workers AI · Llama 3.1 8B", cached: true });
 
@@ -64,15 +68,16 @@ export async function GET(request: Request) {
     if (abstract.length < 180 || await sha256(abstract) !== paper.abstractSha256) {
       return Response.json({ error: "원문 초록이 수집 시점과 달라 요약을 보류합니다." }, { status: 409 });
     }
-    const result = await env.AI.run("@cf/meta/llama-3.1-8b-instruct-fp8", {
+    const result = await env.AI.run("@cf/meta/llama-3.1-8b-instruct", {
       messages: [
-        { role: "system", content: "Summarize academic abstracts faithfully in Korean. Output only a JSON array of exactly three Korean sentences. Use only claims in the abstract. Do not invent numbers or add a heading." },
-        { role: "user", content: `Title: ${paper.title}\nDOI: ${paper.doi}\nAbstract: ${abstract.slice(0, 6000)}\nReturn JSON like [\"첫 문장.\",\"둘째 문장.\",\"셋째 문장.\"].` },
+        { role: "system", content: "Summarize academic abstracts faithfully in Korean. Fill line1, line2, line3 with one factual Korean sentence each. Use only claims in the abstract. Do not invent numbers." },
+        { role: "user", content: `Title: ${paper.title}\nDOI: ${paper.doi}\nAbstract: ${abstract.slice(0, 6000)}` },
       ],
       max_tokens: 320,
       temperature: 0.1,
+      response_format: { type: "json_schema", json_schema: { type: "object", properties: { line1: { type: "string" }, line2: { type: "string" }, line3: { type: "string" } }, required: ["line1", "line2", "line3"], additionalProperties: false } },
     });
-    const lines = threeLines(result.response ?? "");
+    const lines = threeLines(result.response);
     if (!lines) return Response.json({ error: "요약 형식 검증에 실패했습니다." }, { status: 502 });
     await env.RESEARCH_KV.put(key, JSON.stringify(lines), { expirationTtl: 60 * 60 * 24 * 30 });
     return Response.json({ doi: paper.doi, lines, model: "Cloudflare Workers AI · Llama 3.1 8B", cached: false });
