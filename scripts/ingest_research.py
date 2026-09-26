@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Refresh DOI-verified research metadata from OpenAlex.
 
-The published link is always the DOI resolver. Abstract text is never committed;
-Cloudflare Workers AI generates cached Korean summaries at request time.
+The published link is always the DOI resolver. The source abstract is stored
+with its digest so summaries can be generated without a live OpenAlex request.
 """
 from __future__ import annotations
 
@@ -81,6 +81,7 @@ def normalize(work: dict) -> tuple[dict, str] | None:
         "authors": authors, "institution": institution, "year": work["publication_year"],
         "publishedDate": work.get("publication_date"), "originalUrl": doi_url,
         "metadataUrl": work["id"].replace("https://openalex.org/", "https://api.openalex.org/works/"),
+        "abstract": abstract,
         "abstractSha256": hashlib.sha256(abstract.encode()).hexdigest(), "retrievedAt": date.today().isoformat(),
     }
     return record, abstract
