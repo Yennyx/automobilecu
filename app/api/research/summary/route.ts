@@ -3,7 +3,7 @@ import papers from "@/data/research-official.json";
 
 export const dynamic = "force-dynamic";
 
-type AI = { run: (model: string, input: { messages: { role: string; content: string }[]; max_tokens: number; temperature: number; response_format: object }) => Promise<{ response?: unknown }> };
+type AI = { run: (model: string, input: { messages: { role: string; content: string }[]; max_tokens: number; temperature: number }) => Promise<{ response?: unknown }> };
 type KV = { get: (key: string) => Promise<string | null>; put: (key: string, value: string, options: { expirationTtl: number }) => Promise<void> };
 
 function abstractFrom(index: Record<string, number[]>): string {
@@ -55,7 +55,7 @@ export async function GET(request: Request) {
     return Response.json({ error: "요약 서비스가 연결되지 않았습니다." }, { status: 503 });
   }
 
-  const key = `summary:llama31-json:v1:${paper.doi}:${paper.abstractSha256}`;
+  const key = `summary:llama31:v1:${paper.doi}:${paper.abstractSha256}`;
   const cached = await env.RESEARCH_KV.get(key);
   if (cached) return Response.json({ doi: paper.doi, lines: JSON.parse(cached), model: "Cloudflare Workers AI · Llama 3.1 8B", cached: true });
 
@@ -65,14 +65,13 @@ export async function GET(request: Request) {
     if (abstract.length < 180 || await sha256(abstract) !== paper.abstractSha256) {
       return Response.json({ error: "출처 초록의 검증 데이터가 없어 요약을 보류합니다." }, { status: 409 });
     }
-    const result = await env.AI.run("@cf/meta/llama-3.1-8b-instruct", {
+    const result = await env.AI.run("@cf/meta/llama-3.1-8b-instruct-fp8", {
       messages: [
-        { role: "system", content: "Summarize academic abstracts faithfully in Korean. Fill line1, line2, line3 with one factual Korean sentence each. Use only claims in the abstract. Do not invent numbers." },
-        { role: "user", content: `Title: ${paper.title}\nDOI: ${paper.doi}\nAbstract: ${abstract.slice(0, 6000)}` },
+        { role: "system", content: "You summarize academic abstracts faithfully in Korean. Return exactly three Korean sentences, each on its own line. No heading, bullets, or invented numbers." },
+        { role: "user", content: `Title: ${paper.title}\nDOI: ${paper.doi}\nAbstract: ${abstract.slice(0, 6000)}\nWrite three factual Korean sentences using only the abstract.` },
       ],
       max_tokens: 320,
       temperature: 0.1,
-      response_format: { type: "json_schema", json_schema: { type: "object", properties: { line1: { type: "string" }, line2: { type: "string" }, line3: { type: "string" } }, required: ["line1", "line2", "line3"], additionalProperties: false } },
     });
     const lines = threeLines(result.response);
     if (!lines) return Response.json({ error: "요약 형식 검증에 실패했습니다." }, { status: 502 });
