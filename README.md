@@ -1,96 +1,66 @@
-# Commercial ECU Intelligence
+# allaboutecu.com — MVP
 
-상용차 판매·등록·미래차 전환 자료와 실제 ECU 수리사례를 연결해, 상용차 ECU A/S 전문성을 데이터로 축적하는 웹사이트 템플릿입니다.
+Next.js prototype for a commercial vehicle ECU intelligence platform. The visible market series is **synthetic demonstration data**. No registration, sales, inventory, DTC population, recall, or ECU lifetime prediction is presented as observed fact.
 
-## 1. 이 사이트가 보여주는 것
+## Run
 
-이 프로젝트는 `판매량 = 수리수요`라고 단순 가정하지 않습니다.
+```bash
+pnpm install
+pnpm dev
+```
 
-대신 다음 순서로 전문성을 증명하도록 설계했습니다.
+Open `http://localhost:3000`. `pnpm lint` runs TypeScript validation and `pnpm build` creates a production build.
 
-`시장규모 → 운행차량 풀 → 차종/연식 → ECU 고장사례 → 수리결과 → 반복되는 고장패턴`
+## Implemented
 
-시장 데이터는 공개자료를 활용하고, 가장 중요한 차별화 데이터는 실제 수리 현장에서 직접 기록합니다.
+- Responsive intelligence dashboard with working navigation, segment filter, chart, source status, Granbird tracking card, and research links.
+- ECU input form and `/api/diagnose` with range validation and an explainable **rule-based demo** score. It does not estimate remaining life or failure probability.
+- Grounded Granbird strengths and a separate list of unverified issues.
+- Technology roadmap and searchable library linked to primary sources.
+- D1 schema in `migrations/0001_init.sql`, a MOLIT raw-response extractor in `scripts/fetch_molit.py`, and a strict, source-preserving CSV normalizer in `scripts/ingest_market.py`.
+- V2 source badges, a Granbird dual-axis chart that activates only for comparable verified observations, and an extended-source readiness panel.
+- Related-indicator validation in `scripts/ingest_extended.py`, exact-identifier recall matching logic, and an explicit unavailable response until recall data has been verified and imported.
+- Cloudflare Workers build configuration using the [OpenNext adapter](https://developers.cloudflare.com/workers/framework-guides/web-apps/opennext/). `pnpm deploy:cf` is the deployment command after account authentication.
 
-## 2. 현재 반영된 2026년 데이터
+## Official MOLIT API key and table IDs
 
-- 2025년 국내 상용차 내수: 166,779대
-- 2026년 상반기 국내 신규등록: 약 85만대
-- 2026년 상반기 친환경차 비중: 57.8%
-- 2026년 상반기 EV 신규등록: 약 19.9만대
-- 2026년 8월 친환경차 비중: 62.6%
-- 2026년 8월 승합+화물+특수 등록대수 단순합: 4,452,198대
-- 2025년 그랜버드 국내 판매: 1,412대(산업계 보도 기준)
+1. Open the [MOLIT Statistics Sharing Service](https://stat.molit.go.kr/portal/api/main.do) and sign in or join.
+2. Under **서비스신청 및 내역 → 인증키신청 및 이용내역**, request an authentication key and wait for approval.
+3. Under **서비스신청 및 내역 → OPEN API 신청 및 신청현황**, request access to the selected open API and wait for administrator approval. Both screens require login.
+4. In the [API service list](https://stat.molit.go.kr/portal/api/apiList.do), find the exact automobile-registration table. Select its format and time series. Copy the displayed `form_id` (table ID) and `style_num` (format ID) from the generated request URL. Do not infer these IDs from an unrelated statistical page URL.
+5. Store the values in local environment variables `MOLIT_API_KEY`, `MOLIT_FORM_ID`, and `MOLIT_STYLE_NUM`; never commit the key. The [official API page](https://stat.molit.go.kr/portal/api/apiList.do) specifies `key`, `form_id`, `style_num`, `start_dt`, and `end_dt` as required parameters.
 
-정의가 다른 지표는 웹사이트에 구분해서 표시합니다.
+Account check on 2026-09-26: an existing MOLIT authentication key was already marked usable. The **자동차등록대수현황 시도별** API application was submitted with `form_id=5498`, `style_num=2`. The application list showed **신청** and the API itself showed **중지**; this is not an approved, callable integration. The table contains registration stock by area and broad vehicle class, not verified Granbird model-level new registrations. Do not put the key in a URL committed to source control.
 
-## 3. 이메일 구독 연결
+## Public Data Portal applications
 
-`newsletter.gs`를 Google Apps Script로 배포한 뒤 Web App URL을 `app.js`의 `NEWSLETTER_ENDPOINT`에 입력합니다.
+The following official APIs are the initial application set. Each page has **활용신청** and issues an API key after a signed-in application. Keep the key in a local environment or Cloudflare secret, never in source control.
 
-배포 개념:
-1. Google Sheets 하나 생성
-2. 첫 행에 `timestamp`, `email` 헤더 입력
-3. `newsletter.gs` 내용을 Apps Script에 붙여넣기
-4. 웹 앱으로 배포(접근 권한은 본인 운영 정책에 맞게 설정)
-5. 생성된 URL을 `app.js`에 넣기
+| API | Purpose | Approval shown by provider | Validation before display |
+| --- | --- | --- | --- |
+| [TS 신규등록정보](https://www.data.go.kr/data/15059401/openapi.do) | New registrations by month, area, fuel, size, and model code | Development and production automatic | Obtain the separate model-code table and verify the Granbird code and grouping |
+| [한국환경공단 전기자동차 충전소 정보](https://www.data.go.kr/data/15076352/openapi.do) | Electric charging sites | Development automatic | Filter for actual commercial-vehicle suitability before claiming coverage |
+| [한국석유관리원 수소충전소 운영정보](https://www.data.go.kr/data/15133332/openapi.do) | Hydrogen station locations and status | Development automatic | Confirm bus access and define the denominator before calculating a coverage rate |
 
-## 4. 지속적인 데이터 수집
+The [TS recall file](https://www.data.go.kr/data/3048950/fileData.do) is a separate downloadable dataset. Its listed fields do not establish an ECU part-number match.
 
-`.github/workflows/update_sources.yml`은 매주 공식 출처 페이지를 확인하고 `data/source_status.json`에 점검시간을 기록합니다.
+Application check on 2026-09-26: all three Public Data Portal APIs in the table above were submitted and appeared as **승인** under the user's development account, with displayed expiry 2028-09-26. Access keys and response schemas still need to be handled securely and tested before a live data switch.
 
-`KAMA`의 월보는 일부 통계가 로그인/자료회원 기반이므로, 숫자를 무조건 자동 파싱하는 대신
-- 공식 페이지 존재/업데이트 확인은 자동화
-- 실제 숫자는 원본 파일 검증 후 `market.json`에 반영
-방식으로 설계했습니다.
+## Cloudflare deployment handoff
 
-이렇게 해야 잘못된 숫자가 자동으로 사이트에 퍼지는 것을 막을 수 있습니다.
+The Workers bundle was built locally with `opennextjs-cloudflare build`. Production setup still requires signing in to the owner's Cloudflare account, creating a D1 database, adding its real binding ID to `wrangler.jsonc`, applying both migrations, configuring an authenticated scheduled ingestion job, and mapping `allaboutecu.com` to the Worker. Do not publish synthetic market figures as live statistics. Use Cloudflare browser sign-in or an account-scoped API token stored as a secret; do not paste account passwords into this repository or chat.
 
-## 5. 추천 운영 루틴
+The signed-in browser account has an existing public [Yennyx/automobilecu](https://github.com/Yennyx/automobilecu) repository, and the Cloudflare domain already routes `allaboutecu.com` and `*.allaboutecu.com` to an existing `automobilecu` Worker. This local MVP is a separate, uncommitted checkout with no Git remote. Review and integrate with that production code before deploying; replacing the Worker with synthetic data would overwrite an active site.
 
-매주:
-- 국토부 등록대수/연료/차령 신호 확인
-- KAMA 생산·판매 월보 확인
-- 산업부 자동차산업 동향 확인
-- 기아 IR에서 그랜버드 판매 실적 확인
-- 전기·수소 상용차 신규등록 변화 확인
-- 실제 ECU 수리사례 1~3건 입력
+## Data integration gates
 
-매월:
-- `ECU 수리 건수`
-- `차종별 건수`
-- `ECU별 건수`
-- `DTC별 건수`
-- `원인별 건수`
-- `수리 성공률`
-- `재발률`
-- `평균 처리시간`
-을 업데이트합니다.
+1. Register for the [MOLIT Statistics Sharing API](https://stat.molit.go.kr/portal/api/apiList.do), confirm the specific vehicle registration table (`form_id`, `style_num`), dimensions, cadence, and license. The general automobile information API is not a drop-in public aggregate-registration endpoint; some vehicle-level fields require owner consent.
+2. Obtain KAMA sales and TS inspection/DTG usage permissions and schemas. Sales, registrations, and inventory have distinct definitions and must be stored as separate metrics. The [TS recall file](https://www.data.go.kr/data/3048950/fileData.do) lists maker, model, production period, start date, and reason, but does not publish ECU part numbers; it cannot substantiate an ECU-specific recall match by itself.
+3. Load approved data into `market_observations` with original source URL, period, geography, and publication date. Switch the UI to the live API only after reconciliation against an official published total.
+4. Establish verified model-year and ECU part-number mappings before vehicle-specific scoring. Validate diagnostic models with labeled maintenance outcomes before any life or fault prediction is shown.
+5. Use publisher APIs or licensed feeds for IEEE, ScienceDirect, SAE, KCI and commercial reports. Store metadata/abstracts only as permitted; disclose generated summaries and link to original publications.
+6. Configure deployment and scheduled refresh for the chosen Cloudflare runtime after credentials, D1 binding, and observability are available. Cloudflare Cron Triggers use UTC; 00:00 Korea time corresponds to 15:00 UTC on the preceding day. No live cron or production deployment is configured in this MVP.
 
-## 6. 사업 전문화 방향
+## Grounding notes
 
-### 1단계
-디젤 상용 ECU:
-Engine ECU / EGR / DPF / SCR / TCU / ABS-EBS / CAN / UDS
-
-### 2단계
-전기·수소 상용:
-BMS / VCU / Inverter-MCU / OBC / DC-DC / HV safety / Thermal
-
-### 3단계
-SDV/진단:
-DoIP / Automotive Ethernet / Firmware / Secure Boot / Software Update / Cybersecurity
-
-핵심은 “ECU 수리점”에서 “상용차 전장 고장진단 데이터와 ECU 수리 노하우를 가진 전문업체”로 포지션을 확장하는 것입니다.
-
-## 7. 신용보증/사업계획서 활용
-
-사이트의 PDF/화면을 사업계획서에 캡처하여 다음 근거를 연결할 수 있습니다.
-
-- 시장의 객관적 크기: 국토부/KAMA
-- 타깃 차종의 판매·등록 추세
-- 미래차 전환에 따른 전장 복잡도 확대
-- 실제 수리사례가 지속 누적되는 운영체계
-- 수리 데이터 기반의 재현 가능한 진단 노하우
-
-단, 실제 매출/수리 건수는 실제 장부·작업이력에 근거해 별도로 제시해야 합니다.
+Kia's [Granbird heritage page](https://worldwide.kia.com/ko/brand/our-brand/heritage/vehicles/granbird) identifies the Super Premium model with a diesel engine; the [official price list](https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/price/price_new-granbird.pdf) lists DPF+SCR. An official Granbird FCEV lineup or sales share was not established from the reviewed Kia sources, so the UI leaves that item unverified. Euro 7 is linked to the [EU regulation](https://eur-lex.europa.eu/eli/reg/2024/1257/oj/eng); J1939 diagnostics are linked to [SAE](https://saemobilus.sae.org/standards/j193973_201705-application-layer-diagnostics).
