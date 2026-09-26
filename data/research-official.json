@@ -1,0 +1,171 @@
+[
+  {
+    "doi": "10.4271/2024-01-5041",
+    "title": "Unified Diagnostics Off-board Tool Development Testing",
+    "publisher": "SAE technical papers on CD-ROM/SAE technical paper series",
+    "authors": [
+      "Vedashree Vikas Ayachit",
+      "Naresh G. Gandhi",
+      "Suhas Marutirao Kakade"
+    ],
+    "institution": "COEP Technological University",
+    "year": 2024,
+    "publishedDate": "2024-04-07",
+    "originalUrl": "https://doi.org/10.4271/2024-01-5041",
+    "metadataUrl": "https://api.openalex.org/works/W4394575163",
+    "abstractSha256": "7da2ae0db0ac7f1c573c5cc8ed672c3aa2747192d2ba81821e85fe130adeb80b",
+    "retrievedAt": "2026-09-26"
+  },
+  {
+    "doi": "10.3390/atmos15080997",
+    "title": "Recent Advances in SCR Systems of Heavy-Duty Diesel Vehicles—Low-Temperature NOx Reduction Technology and Combination of SCR with Remote OBD",
+    "publisher": "Atmosphere",
+    "authors": [
+      "Zhengguo Chen",
+      "Qingyang Liu",
+      "Haoye Liu"
+    ],
+    "institution": "Tianjin University",
+    "year": 2024,
+    "publishedDate": "2024-08-20",
+    "originalUrl": "https://doi.org/10.3390/atmos15080997",
+    "metadataUrl": "https://api.openalex.org/works/W4401976376",
+    "abstractSha256": "feee9d40501b28811c36e391d816b49ba718c635fc3c8c1baf3eb09009b8f4c0",
+    "retrievedAt": "2026-09-26"
+  },
+  {
+    "doi": "10.1109/tvt.2024.3398297",
+    "title": "Integrated LKA and DYC Control of Four-Wheel-Independent-Drive Electric Vehicles With a Central-Zonal Electronic and Electrical Architecture",
+    "publisher": "IEEE Transactions on Vehicular Technology",
+    "authors": [
+      "Wanke Cao",
+      "Liu Chao",
+      "Zhiyin Liu"
+    ],
+    "institution": "Beijing Institute of Technology",
+    "year": 2024,
+    "publishedDate": "2024-05-08",
+    "originalUrl": "https://doi.org/10.1109/tvt.2024.3398297",
+    "metadataUrl": "https://api.openalex.org/works/W4396753398",
+    "abstractSha256": "a6d44732ed8d189a6af1b728e8921bbba9fec8d35ae6c6571e9b01fe7c90bacf",
+    "retrievedAt": "2026-09-26"
+  },
+  {
+    "doi": "10.3390/machines11020201",
+    "title": "Design and Implementation of SAE J1939 and Modbus Communication Protocols for Electric Vehicle",
+    "publisher": "Machines",
+    "authors": [
+      "Ahmad S. Alzahrani",
+      "Shriya Makarand Wangikar",
+      "Vairavasundaram Indragandhi"
+    ],
+    "institution": "Najran University",
+    "year": 2023,
+    "publishedDate": "2023-02-01",
+    "originalUrl": "https://doi.org/10.3390/machines11020201",
+    "metadataUrl": "https://api.openalex.org/works/W4318828824",
+    "abstractSha256": "2906f4b7805808cdf42a881e875a57546cdb93aa1555cb4a2c5fd541c4ec5adc",
+    "retrievedAt": "2026-09-26"
+  },
+  {
+    "doi": "10.3390/en16196884",
+    "title": "Design of Zonal E/E Architectures in Vehicles Using a Coupled Approach of k-Means Clustering and Dijkstra’s Algorithm",
+    "publisher": "Energies",
+    "authors": [
+      "Jonas Maier",
+      "Hans-Christian Reuss"
+    ],
+    "institution": "University of Stuttgart",
+    "year": 2023,
+    "publishedDate": "2023-09-29",
+    "originalUrl": "https://doi.org/10.3390/en16196884",
+    "metadataUrl": "https://api.openalex.org/works/W4387186626",
+    "abstractSha256": "f83ca7c32728e451b597d0de637317fd9974b5de12bb6aefd423cb25f2955b47",
+    "retrievedAt": "2026-09-26"
+  },
+  {
+    "doi": "10.1016/j.geits.2023.100095",
+    "title": "Hierarchical predictive energy management strategy for fuel cell buses entering bus stops scenario",
+    "publisher": "Green Energy and Intelligent Transportation",
+    "authors": [
+      "Mei Yan",
+      "Hongyang Xu",
+      "Menglin Li"
+    ],
+    "institution": "Yanshan University",
+    "year": 2023,
+    "publishedDate": "2023-06-16",
+    "originalUrl": "https://doi.org/10.1016/j.geits.2023.100095",
+    "metadataUrl": "https://api.openalex.org/works/W4380990386",
+    "abstractSha256": "fb34e5e17de31bc902659215d1043642a8b5e574d3ceae748b08c15ad7aaf6da",
+    "retrievedAt": "2026-09-26"
+  },
+  {
+    "doi": "10.1109/tte.2022.3185215",
+    "title": "An Economic Driving Energy Management Strategy for the Fuel Cell Bus",
+    "publisher": "IEEE Transactions on Transportation Electrification",
+    "authors": [
+      "Jinquan Guo",
+      "Hongwen He",
+      "Zhongbao Wei"
+    ],
+    "institution": "Beijing Institute of Technology",
+    "year": 2022,
+    "publishedDate": "2022-06-22",
+    "originalUrl": "https://doi.org/10.1109/tte.2022.3185215",
+    "metadataUrl": "https://api.openalex.org/works/W4285234067",
+    "abstractSha256": "d0de718b5e176e691c04d3b90f2f61d8368bb474577d473736f4d84d2ea528d8",
+    "retrievedAt": "2026-09-26"
+  },
+  {
+    "doi": "10.1016/j.conengprac.2021.104982",
+    "title": "A causal supervisory control strategy for optimal control of a heavy-duty Diesel engine with SCR aftertreatment",
+    "publisher": "Control Engineering Practice",
+    "authors": [
+      "Stijn van Dooren",
+      "Alois Amstutz",
+      "Christopher  Harald Onder"
+    ],
+    "institution": "ETH Zurich",
+    "year": 2021,
+    "publishedDate": "2021-12-03",
+    "originalUrl": "https://doi.org/10.1016/j.conengprac.2021.104982",
+    "metadataUrl": "https://api.openalex.org/works/W4200424431",
+    "abstractSha256": "ac03477accff0029605f7ea6e73d569b7f1746d8d75c8e867342388cf62a86a9",
+    "retrievedAt": "2026-09-26"
+  },
+  {
+    "doi": "10.1109/tvt.2020.3025627",
+    "title": "Battery-Involved Energy Management for Hybrid Electric Bus Based on Expert-Assistance Deep Deterministic Policy Gradient Algorithm",
+    "publisher": "IEEE Transactions on Vehicular Technology",
+    "authors": [
+      "Jingda Wu",
+      "Zhongbao Wei",
+      "Kailong Liu"
+    ],
+    "institution": "Beijing Institute of Technology",
+    "year": 2020,
+    "publishedDate": "2020-09-21",
+    "originalUrl": "https://doi.org/10.1109/tvt.2020.3025627",
+    "metadataUrl": "https://api.openalex.org/works/W3088335723",
+    "abstractSha256": "ef005419fbd9e9873c4b76353bea7add8ad0dd653d4e4c655d3536781f7ca5fc",
+    "retrievedAt": "2026-09-26"
+  },
+  {
+    "doi": "10.1109/tii.2020.3014599",
+    "title": "Battery Thermal- and Health-Constrained Energy Management for Hybrid Electric Bus Based on Soft Actor-Critic DRL Algorithm",
+    "publisher": "IEEE Transactions on Industrial Informatics",
+    "authors": [
+      "Jingda Wu",
+      "Zhongbao Wei",
+      "Weihan Li"
+    ],
+    "institution": "Beijing Institute of Technology",
+    "year": 2020,
+    "publishedDate": "2020-08-06",
+    "originalUrl": "https://doi.org/10.1109/tii.2020.3014599",
+    "metadataUrl": "https://api.openalex.org/works/W3048206271",
+    "abstractSha256": "6939d059ce3302c1d55a8b7b27abe98cae2b23ad7204605303f4cb86c28688a4",
+    "retrievedAt": "2026-09-26"
+  }
+]
