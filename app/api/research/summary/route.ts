@@ -3,14 +3,8 @@ import papers from "@/data/research-official.json";
 
 export const dynamic = "force-dynamic";
 
-type Work = { abstract_inverted_index?: Record<string, number[]> };
 type AI = { run: (model: string, input: { messages: { role: string; content: string }[]; max_tokens: number; temperature: number; response_format: object }) => Promise<{ response?: unknown }> };
 type KV = { get: (key: string) => Promise<string | null>; put: (key: string, value: string, options: { expirationTtl: number }) => Promise<void> };
-
-function abstractFrom(index: Record<string, number[]>): string {
-  return Object.entries(index).flatMap(([word, positions]) => positions.map(position => [position, word] as const))
-    .sort((a, b) => a[0] - b[0]).map(([, word]) => word).join(" ");
-}
 
 async function sha256(value: string): Promise<string> {
   const bytes = new TextEncoder().encode(value);
@@ -61,12 +55,9 @@ export async function GET(request: Request) {
   if (cached) return Response.json({ doi: paper.doi, lines: JSON.parse(cached), model: "Cloudflare Workers AI · Llama 3.1 8B", cached: true });
 
   try {
-    const sourceResponse = await fetch(paper.metadataUrl, { headers: { Accept: "application/json" } });
-    if (!sourceResponse.ok) throw new Error(`OpenAlex ${sourceResponse.status}`);
-    const source = await sourceResponse.json() as Work;
-    const abstract = abstractFrom(source.abstract_inverted_index ?? {});
+    const abstract = (paper as typeof paper & { abstract?: string }).abstract ?? "";
     if (abstract.length < 180 || await sha256(abstract) !== paper.abstractSha256) {
-      return Response.json({ error: "원문 초록이 수집 시점과 달라 요약을 보류합니다." }, { status: 409 });
+      return Response.json({ error: "출처 초록의 검증 데이터가 없어 요약을 보류합니다." }, { status: 409 });
     }
     const result = await env.AI.run("@cf/meta/llama-3.1-8b-instruct", {
       messages: [
@@ -82,6 +73,6 @@ export async function GET(request: Request) {
     await env.RESEARCH_KV.put(key, JSON.stringify(lines), { expirationTtl: 60 * 60 * 24 * 30 });
     return Response.json({ doi: paper.doi, lines, model: "Cloudflare Workers AI · Llama 3.1 8B", cached: false });
   } catch {
-    return Response.json({ error: "원문 또는 무료 AI 요약 서비스에 연결할 수 없습니다." }, { status: 503 });
+    return Response.json({ error: "무료 AI 요약 서비스에 연결할 수 없습니다." }, { status: 503 });
   }
 }
