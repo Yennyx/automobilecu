@@ -5,5 +5,7 @@
   "compatibility_date": "2026-09-26",
   "compatibility_flags": ["nodejs_compat"],
   "assets": { "directory": ".open-next/assets", "binding": "ASSETS" },
+  "ai": { "binding": "AI" },
+  "kv_namespaces": [{ "binding": "RESEARCH_KV", "id": "a488e3e439cd4cf69cb895a7a023fd81" }],
   "observability": { "enabled": true }
 }
