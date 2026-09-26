@@ -46,11 +46,11 @@ The [TS recall file](https://www.data.go.kr/data/3048950/fileData.do) is a separ
 
 Application check on 2026-09-26: all three Public Data Portal APIs in the table above were submitted and appeared as **승인** under the user's development account, with displayed expiry 2028-09-26. Access keys and response schemas still need to be handled securely and tested before a live data switch.
 
-## Cloudflare deployment handoff
+## Cloudflare deployment
 
-The Workers bundle was built locally with `opennextjs-cloudflare build`. Production setup still requires signing in to the owner's Cloudflare account, creating a D1 database, adding its real binding ID to `wrangler.jsonc`, applying both migrations, configuring an authenticated scheduled ingestion job, and mapping `allaboutecu.com` to the Worker. Do not publish synthetic market figures as live statistics. Use Cloudflare browser sign-in or an account-scoped API token stored as a secret; do not paste account passwords into this repository or chat.
+On 2026-09-26, the user's existing [Yennyx/automobilecu](https://github.com/Yennyx/automobilecu) `main` branch was updated with this MVP. Cloudflare Builds uses `CI=true npx opennextjs-cloudflare build` and `npx wrangler deploy` to deploy the `automobilecu` Worker at [allaboutecu.com](https://allaboutecu.com/). The previous static site remains recoverable from Git commit `a047553`. The live site and its `/api/diagnose` route were checked after deployment.
 
-The signed-in browser account has an existing public [Yennyx/automobilecu](https://github.com/Yennyx/automobilecu) repository, and the Cloudflare domain already routes `allaboutecu.com` and `*.allaboutecu.com` to an existing `automobilecu` Worker. This local MVP is a separate, uncommitted checkout with no Git remote. Review and integrate with that production code before deploying; replacing the Worker with synthetic data would overwrite an active site.
+This deployment serves an explicitly labeled demonstration. The three approved Public Data Portal APIs and the MOLIT application are **not** feeding live figures to the UI. D1 creation, migration, secured API-key storage, ingestion scheduling, source reconciliation, and production monitoring for live data remain future integration work. Do not present synthetic market figures as official statistics.
 
 ## Data integration gates
 
@@ -59,7 +59,7 @@ The signed-in browser account has an existing public [Yennyx/automobilecu](https
 3. Load approved data into `market_observations` with original source URL, period, geography, and publication date. Switch the UI to the live API only after reconciliation against an official published total.
 4. Establish verified model-year and ECU part-number mappings before vehicle-specific scoring. Validate diagnostic models with labeled maintenance outcomes before any life or fault prediction is shown.
 5. Use publisher APIs or licensed feeds for IEEE, ScienceDirect, SAE, KCI and commercial reports. Store metadata/abstracts only as permitted; disclose generated summaries and link to original publications.
-6. Configure deployment and scheduled refresh for the chosen Cloudflare runtime after credentials, D1 binding, and observability are available. Cloudflare Cron Triggers use UTC; 00:00 Korea time corresponds to 15:00 UTC on the preceding day. No live cron or production deployment is configured in this MVP.
+6. Configure a scheduled refresh after API credentials, D1 binding, and observability are available. Cloudflare Cron Triggers use UTC; 00:00 Korea time corresponds to 15:00 UTC on the preceding day. No live data ingestion cron is configured in this MVP.
 
 ## Grounding notes
 
