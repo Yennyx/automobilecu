@@ -1,5 +1,2121 @@
 [
   {
+    "doi": "10.4271/2026-01-0071",
+    "title": "Evolutionary Paths Toward Vehicle Zonal E/E Architecture: A Unified Architectural Framework",
+    "publisher": "SAE technical papers on CD-ROM/SAE technical paper series",
+    "authors": [
+      "Shugang Jiang"
+    ],
+    "institution": null,
+    "year": 2026,
+    "publishedDate": "2026-04-07",
+    "originalUrl": "https://doi.org/10.4271/2026-01-0071",
+    "metadataUrl": "https://api.openalex.org/works/W7150903778",
+    "abstractInvertedIndex": {
+      "The": [
+        0,
+        22,
+        172
+      ],
+      "automotive": [
+        1,
+        116
+      ],
+      "industry": [
+        2
+      ],
+      "is": [
+        3
+      ],
+      "undergoing": [
+        4
+      ],
+      "a": [
+        5,
+        68,
+        155
+      ],
+      "fundamental": [
+        6
+      ],
+      "transformation": [
+        7
+      ],
+      "in": [
+        8,
+        40
+      ],
+      "Electrical/Electronic": [
+        9
+      ],
+      "(E/E)": [
+        10
+      ],
+      "architecture,": [
+        11,
+        201
+      ],
+      "evolving": [
+        12
+      ],
+      "from": [
+        13
+      ],
+      "traditional": [
+        14
+      ],
+      "distributed": [
+        15,
+        63,
+        94,
+        186
+      ],
+      "and": [
+        16,
+        30,
+        44,
+        56,
+        80,
+        95,
+        112,
+        118,
+        128,
+        181,
+        187,
+        191,
+        207,
+        210,
+        221,
+        233
+      ],
+      "domain-based": [
+        17,
+        96,
+        188
+      ],
+      "designs": [
+        18,
+        79
+      ],
+      "toward": [
+        19,
+        168,
+        241
+      ],
+      "zonal": [
+        20,
+        103,
+        113,
+        147,
+        169,
+        208,
+        216,
+        243
+      ],
+      "configurations.": [
+        21
+      ],
+      "rapid": [
+        23
+      ],
+      "growth": [
+        24
+      ],
+      "of": [
+        25,
+        37,
+        67,
+        87,
+        89,
+        165,
+        215,
+        247
+      ],
+      "software-defined": [
+        26
+      ],
+      "functionality,": [
+        27
+      ],
+      "cross-domain": [
+        28
+      ],
+      "integration,": [
+        29,
+        194
+      ],
+      "centralized": [
+        31
+      ],
+      "computing": [
+        32,
+        55
+      ],
+      "has": [
+        33
+      ],
+      "exposed": [
+        34
+      ],
+      "inherent": [
+        35
+      ],
+      "limitations": [
+        36
+      ],
+      "legacy": [
+        38
+      ],
+      "architectures": [
+        39
+      ],
+      "scalability,": [
+        41
+      ],
+      "wiring": [
+        42
+      ],
+      "complexity,": [
+        43
+      ],
+      "system": [
+        45,
+        82
+      ],
+      "integration.": [
+        46
+      ],
+      "Zonal": [
+        47
+      ],
+      "E/E": [
+        48,
+        81,
+        104,
+        170,
+        200,
+        217,
+        244
+      ],
+      "architecture": [
+        49,
+        245
+      ],
+      "addresses": [
+        50
+      ],
+      "these": [
+        51,
+        223
+      ],
+      "challenges": [
+        52
+      ],
+      "by": [
+        53,
+        150
+      ],
+      "consolidating": [
+        54
+      ],
+      "Input/Output": [
+        57
+      ],
+      "(I/O)": [
+        58
+      ],
+      "resources": [
+        59
+      ],
+      "into": [
+        60
+      ],
+      "high-performance": [
+        61,
+        107
+      ],
+      "controllers": [
+        62
+      ],
+      "across": [
+        64
+      ],
+      "physical": [
+        65
+      ],
+      "zones": [
+        66
+      ],
+      "vehicle.": [
+        69
+      ],
+      "This": [
+        70,
+        152
+      ],
+      "transformation,": [
+        71
+      ],
+      "however,": [
+        72
+      ],
+      "cannot": [
+        73
+      ],
+      "occur": [
+        74
+      ],
+      "instantaneously,": [
+        75
+      ],
+      "as": [
+        76,
+        106
+      ],
+      "contemporary": [
+        77
+      ],
+      "vehicle": [
+        78
+      ],
+      "solutions": [
+        83
+      ],
+      "are": [
+        84
+      ],
+      "the": [
+        85,
+        146,
+        162,
+        212,
+        226
+      ],
+      "result": [
+        86
+      ],
+      "decades": [
+        88
+      ],
+      "incremental": [
+        90
+      ],
+      "development": [
+        91
+      ],
+      "based": [
+        92
+      ],
+      "on": [
+        93
+      ],
+      "paradigms.": [
+        97
+      ],
+      "Moreover,": [
+        98
+      ],
+      "key": [
+        99,
+        178
+      ],
+      "enabling": [
+        100
+      ],
+      "technologies": [
+        101
+      ],
+      "for": [
+        102,
+        236
+      ],
+      "architecture—such": [
+        105
+      ],
+      "Central": [
+        108
+      ],
+      "Compute": [
+        109
+      ],
+      "Platform": [
+        110
+      ],
+      "(CCP)": [
+        111
+      ],
+      "controllers,": [
+        114,
+        209
+      ],
+      "high-speed": [
+        115
+      ],
+      "Ethernet,": [
+        117
+      ],
+      "standardized": [
+        119
+      ],
+      "software": [
+        120
+      ],
+      "architecture—are": [
+        121
+      ],
+      "still": [
+        122
+      ],
+      "maturing.": [
+        123
+      ],
+      "To": [
+        124
+      ],
+      "ensure": [
+        125
+      ],
+      "safety,": [
+        126
+      ],
+      "reliability,": [
+        127
+      ],
+      "cost-effectiveness,": [
+        129
+      ],
+      "Original": [
+        130
+      ],
+      "Equipment": [
+        131
+      ],
+      "Manufacturers": [
+        132
+      ],
+      "(OEMs)": [
+        133
+      ],
+      "must": [
+        134
+      ],
+      "therefore": [
+        135
+      ],
+      "adopt": [
+        136
+      ],
+      "carefully": [
+        137
+      ],
+      "planned": [
+        138
+      ],
+      "evolution": [
+        139
+      ],
+      "strategy": [
+        140
+      ],
+      "to": [
+        141,
+        205
+      ],
+      "progressively": [
+        142
+      ],
+      "consolidate": [
+        143
+      ],
+      "functions,": [
+        144
+      ],
+      "realizing": [
+        145
+      ],
+      "design": [
+        148
+      ],
+      "step": [
+        149
+      ],
+      "step.": [
+        151
+      ],
+      "paper": [
+        153
+      ],
+      "proposes": [
+        154
+      ],
+      "unified": [
+        156
+      ],
+      "architectural": [
+        157,
+        231
+      ],
+      "framework": [
+        158,
+        173,
+        227
+      ],
+      "that": [
+        159
+      ],
+      "systematically": [
+        160
+      ],
+      "maps": [
+        161
+      ],
+      "full": [
+        163,
+        213
+      ],
+      "spectrum": [
+        164
+      ],
+      "evolutionary": [
+        166,
+        224
+      ],
+      "paths": [
+        167
+      ],
+      "architecture.": [
+        171,
+        218
+      ],
+      "identifies": [
+        174
+      ],
+      "major": [
+        175
+      ],
+      "transition": [
+        176,
+        240
+      ],
+      "stages,": [
+        177
+      ],
+      "engineering": [
+        179
+      ],
+      "activities,": [
+        180
+      ],
+      "alternative": [
+        182
+      ],
+      "migration": [
+        183,
+        204
+      ],
+      "paths,": [
+        184,
+        225
+      ],
+      "including": [
+        185
+      ],
+      "architectures,": [
+        189
+      ],
+      "vertical": [
+        190
+      ],
+      "horizontal": [
+        192
+      ],
+      "function": [
+        193,
+        203
+      ],
+      "various": [
+        195
+      ],
+      "domain": [
+        196
+      ],
+      "fusion": [
+        197
+      ],
+      "patterns,": [
+        198
+      ],
+      "mixed": [
+        199
+      ],
+      "continuous": [
+        202
+      ],
+      "CCP": [
+        206
+      ],
+      "ultimately,": [
+        211
+      ],
+      "realization": [
+        214
+      ],
+      "By": [
+        219
+      ],
+      "organizing": [
+        220
+      ],
+      "contrasting": [
+        222
+      ],
+      "provides": [
+        228
+      ],
+      "OEMs": [
+        229
+      ],
+      "with": [
+        230
+      ],
+      "insight": [
+        232
+      ],
+      "practical": [
+        234
+      ],
+      "guidance": [
+        235
+      ],
+      "planning": [
+        237
+      ],
+      "low-risk,": [
+        238
+      ],
+      "staged": [
+        239
+      ],
+      "fully": [
+        242
+      ],
+      "capable": [
+        246
+      ],
+      "supporting": [
+        248
+      ],
+      "next-generation": [
+        249
+      ],
+      "Software-Defined": [
+        250
+      ],
+      "Vehicles": [
+        251
+      ],
+      "(SDVs).": [
+        252
+      ]
+    },
+    "abstractSha256": "4ce12fb9e8267e333813b129ae416d07f9ccb6ea8d4836f4d0c69fcee9515dd6",
+    "retrievedAt": "2026-10-03"
+  },
+  {
+    "doi": "10.2172/3016980",
+    "title": "Firmware Tampering Detection in Heavy-Duty Vehicles through J1939 CAN Analysis",
+    "publisher": "게재지 확인 필요",
+    "authors": [
+      "USDOE",
+      "Rima Asmar Awad",
+      "Joel Asiamah"
+    ],
+    "institution": "Oak Ridge National Laboratory",
+    "year": 2026,
+    "publishedDate": "2026-02-01",
+    "originalUrl": "https://doi.org/10.2172/3016980",
+    "metadataUrl": "https://api.openalex.org/works/W7128295554",
+    "abstractInvertedIndex": {
+      "Modern": [
+        0
+      ],
+      "heavy-duty": [
+        1,
+        169
+      ],
+      "vehicles": [
+        2
+      ],
+      "rely": [
+        3
+      ],
+      "on": [
+        4
+      ],
+      "complex": [
+        5
+      ],
+      "networks": [
+        6
+      ],
+      "of": [
+        7,
+        130,
+        136,
+        157
+      ],
+      "Electronic": [
+        8
+      ],
+      "Control": [
+        9
+      ],
+      "Units": [
+        10
+      ],
+      "(ECUs)": [
+        11
+      ],
+      "that": [
+        12,
+        102
+      ],
+      "communicate": [
+        13
+      ],
+      "using": [
+        14
+      ],
+      "the": [
+        15,
+        33,
+        46,
+        52,
+        63,
+        128,
+        155
+      ],
+      "J1939": [
+        16,
+        53,
+        87
+      ],
+      "protocol.": [
+        17
+      ],
+      "While": [
+        18
+      ],
+      "this": [
+        19
+      ],
+      "system": [
+        20
+      ],
+      "makes": [
+        21
+      ],
+      "it": [
+        22,
+        30
+      ],
+      "easier": [
+        23
+      ],
+      "to": [
+        24,
+        35,
+        110,
+        127,
+        146,
+        164
+      ],
+      "update": [
+        25
+      ],
+      "and": [
+        26,
+        60,
+        77,
+        85,
+        92,
+        121,
+        141
+      ],
+      "configure": [
+        27
+      ],
+      "vehicle": [
+        28,
+        131,
+        170
+      ],
+      "components,": [
+        29
+      ],
+      "also": [
+        31
+      ],
+      "opens": [
+        32
+      ],
+      "door": [
+        34
+      ],
+      "serious": [
+        36
+      ],
+      "cybersecurity": [
+        37
+      ],
+      "risks": [
+        38
+      ],
+      "if": [
+        39
+      ],
+      "not": [
+        40
+      ],
+      "properly": [
+        41
+      ],
+      "secured.": [
+        42
+      ],
+      "This": [
+        43,
+        152
+      ],
+      "work": [
+        44,
+        153
+      ],
+      "investigates": [
+        45
+      ],
+      "potential": [
+        47
+      ],
+      "for": [
+        48
+      ],
+      "firmware": [
+        49,
+        113,
+        143,
+        160
+      ],
+      "tampering": [
+        50
+      ],
+      "through": [
+        51
+      ],
+      "communication": [
+        54
+      ],
+      "protocol,": [
+        55
+      ],
+      "which": [
+        56
+      ],
+      "enables": [
+        57
+      ],
+      "ECU": [
+        58,
+        112
+      ],
+      "configuration": [
+        59
+      ],
+      "reprogramming": [
+        61,
+        139
+      ],
+      "over": [
+        62
+      ],
+      "Controller": [
+        64
+      ],
+      "Area": [
+        65
+      ],
+      "Network": [
+        66
+      ],
+      "(CAN)": [
+        67
+      ],
+      "bus.": [
+        68
+      ],
+      "By": [
+        69
+      ],
+      "monitoring": [
+        70
+      ],
+      "CAN": [
+        71
+      ],
+      "traffic": [
+        72
+      ],
+      "during": [
+        73
+      ],
+      "legitimate": [
+        74
+      ],
+      "maintenance": [
+        75
+      ],
+      "operations": [
+        76
+      ],
+      "reverse-engineering": [
+        78
+      ],
+      "OEM": [
+        79
+      ],
+      "diagnostic": [
+        80
+      ],
+      "software,": [
+        81
+      ],
+      "we": [
+        82
+      ],
+      "identified": [
+        83
+      ],
+      "common": [
+        84
+      ],
+      "proprietary": [
+        86
+      ],
+      "message": [
+        88
+      ],
+      "identifiers,": [
+        89
+      ],
+      "authentication": [
+        90,
+        104,
+        161
+      ],
+      "patterns,": [
+        91
+      ],
+      "vulnerabilities": [
+        93
+      ],
+      "within": [
+        94
+      ],
+      "Unified": [
+        95
+      ],
+      "Diagnostic": [
+        96
+      ],
+      "Services": [
+        97
+      ],
+      "(UDS).": [
+        98
+      ],
+      "These": [
+        99
+      ],
+      "findings": [
+        100
+      ],
+      "demonstrate": [
+        101
+      ],
+      "inadequate": [
+        103
+      ],
+      "mechanisms": [
+        105
+      ],
+      "can": [
+        106
+      ],
+      "allow": [
+        107
+      ],
+      "malicious": [
+        108
+      ],
+      "actors": [
+        109
+      ],
+      "alter": [
+        111
+      ],
+      "or": [
+        114
+      ],
+      "disable": [
+        115
+      ],
+      "safety": [
+        116,
+        122
+      ],
+      "functions,": [
+        117
+      ],
+      "posing": [
+        118
+      ],
+      "severe": [
+        119
+      ],
+      "operational": [
+        120
+      ],
+      "risks.": [
+        123
+      ],
+      "Our": [
+        124
+      ],
+      "analysis": [
+        125
+      ],
+      "contributes": [
+        126
+      ],
+      "development": [
+        129
+      ],
+      "intrusion": [
+        132
+      ],
+      "detection": [
+        133
+      ],
+      "systems": [
+        134
+      ],
+      "capable": [
+        135
+      ],
+      "recognizing": [
+        137
+      ],
+      "abnormal": [
+        138
+      ],
+      "activity": [
+        140
+      ],
+      "future": [
+        142
+      ],
+      "fingerprinting": [
+        144
+      ],
+      "methods": [
+        145
+      ],
+      "verify": [
+        147
+      ],
+      "software": [
+        148
+      ],
+      "integrity": [
+        149
+      ],
+      "across": [
+        150,
+        162
+      ],
+      "ECUs.": [
+        151
+      ],
+      "highlights": [
+        154
+      ],
+      "importance": [
+        156
+      ],
+      "standardizing": [
+        158
+      ],
+      "secure": [
+        159
+      ],
+      "manufacturers": [
+        163
+      ],
+      "strengthen": [
+        165
+      ],
+      "cyber": [
+        166
+      ],
+      "resilience": [
+        167
+      ],
+      "in": [
+        168
+      ],
+      "systems.": [
+        171
+      ]
+    },
+    "abstractSha256": "3a431613aaaf32e2919d8f55d9ed0234e15b5d509967f092defd4d7e2e606b8a",
+    "retrievedAt": "2026-10-03"
+  },
+  {
+    "doi": "10.1016/j.ejor.2026.05.046",
+    "title": "Chance-constrained battery management for electric bus scheduling",
+    "publisher": "European Journal of Operational Research",
+    "authors": [
+      "Léa Ricard",
+      "Guy Desaulniers",
+      "Andrea Lodi"
+    ],
+    "institution": "École Polytechnique Fédérale de Lausanne",
+    "year": 2026,
+    "publishedDate": "2026-06-01",
+    "originalUrl": "https://doi.org/10.1016/j.ejor.2026.05.046",
+    "metadataUrl": "https://api.openalex.org/works/W7163057690",
+    "abstractInvertedIndex": {
+      "•": [
+        0,
+        13,
+        22,
+        31,
+        43
+      ],
+      "Chance-constrained": [
+        1
+      ],
+      "formulation": [
+        2
+      ],
+      "for": [
+        3
+      ],
+      "the": [
+        4
+      ],
+      "electric": [
+        5
+      ],
+      "vehicle": [
+        6
+      ],
+      "scheduling": [
+        7
+      ],
+      "problem": [
+        8
+      ],
+      "with": [
+        9,
+        25
+      ],
+      "stochastic": [
+        10,
+        26
+      ],
+      "energy": [
+        11
+      ],
+      "consumption.": [
+        12
+      ],
+      "Battery": [
+        14
+      ],
+      "management": [
+        15
+      ],
+      "guidelines": [
+        16
+      ],
+      "enforced": [
+        17
+      ],
+      "through": [
+        18
+      ],
+      "probabilistic": [
+        19
+      ],
+      "state-of-charge": [
+        20
+      ],
+      "constraints.": [
+        21
+      ],
+      "Branch-and-price": [
+        23
+      ],
+      "algorithm": [
+        24
+      ],
+      "pricing": [
+        27
+      ],
+      "and": [
+        28,
+        39
+      ],
+      "dominance": [
+        29
+      ],
+      "rules.": [
+        30
+      ],
+      "Explicit": [
+        32
+      ],
+      "modeling": [
+        33
+      ],
+      "of": [
+        34
+      ],
+      "nonlinear": [
+        35
+      ],
+      "charging,": [
+        36,
+        38
+      ],
+      "partial": [
+        37
+      ],
+      "charger": [
+        40
+      ],
+      "capacity": [
+        41
+      ],
+      "limits.": [
+        42
+      ],
+      "Stochastic": [
+        44
+      ],
+      "approach": [
+        45
+      ],
+      "reduces": [
+        46
+      ],
+      "operational": [
+        47
+      ],
+      "costs": [
+        48
+      ],
+      "while": [
+        49
+      ],
+      "maintaining": [
+        50
+      ],
+      "battery": [
+        51
+      ],
+      "policy": [
+        52
+      ],
+      "compliance.": [
+        53
+      ]
+    },
+    "abstractSha256": "7845d8b070ef2131b9566c555197d58eb874a2c8b19d2dfa9c83fc93a5215a03",
+    "retrievedAt": "2026-10-03"
+  },
+  {
+    "doi": "10.82417/g670-1z81",
+    "title": "Impact of hydrogen-diesel dual fuel combustion on the performance of aftertreatment system in heavy duty commercial truck",
+    "publisher": "Espace ÉTS (ETS)",
+    "authors": [
+      "Mumtaz, Zarqoon",
+      "Farzam, Reza",
+      "Guan, Mang"
+    ],
+    "institution": null,
+    "year": 2025,
+    "publishedDate": "2025-11-29",
+    "originalUrl": "https://doi.org/10.82417/g670-1z81",
+    "metadataUrl": "https://api.openalex.org/works/W7116117362",
+    "abstractInvertedIndex": {
+      "Diesel": [
+        0,
+        122,
+        127
+      ],
+      "engines": [
+        1
+      ],
+      "are": [
+        2
+      ],
+      "widely": [
+        3
+      ],
+      "used": [
+        4
+      ],
+      "in": [
+        5,
+        75,
+        108,
+        168,
+        295,
+        328,
+        351,
+        362,
+        368
+      ],
+      "heavy-duty": [
+        6,
+        77
+      ],
+      "commercial": [
+        7,
+        78
+      ],
+      "vehicles": [
+        8
+      ],
+      "due": [
+        9,
+        313
+      ],
+      "to": [
+        10,
+        22,
+        42,
+        173,
+        245,
+        252,
+        277,
+        314,
+        338,
+        360
+      ],
+      "their": [
+        11
+      ],
+      "performance,": [
+        12,
+        89
+      ],
+      "efficiency": [
+        13
+      ],
+      "and": [
+        14,
+        32,
+        49,
+        61,
+        111,
+        131,
+        145,
+        155,
+        183,
+        191,
+        199,
+        202,
+        234,
+        271,
+        346,
+        371
+      ],
+      "reliability.": [
+        15
+      ],
+      "They": [
+        16
+      ],
+      "use": [
+        17
+      ],
+      "exhaust": [
+        18,
+        59,
+        180,
+        248
+      ],
+      "aftertreatment": [
+        19
+      ],
+      "systems": [
+        20
+      ],
+      "(EATS)": [
+        21
+      ],
+      "limit": [
+        23
+      ],
+      "emissions": [
+        24,
+        205
+      ],
+      "of": [
+        25,
+        72,
+        84,
+        120,
+        152,
+        163,
+        221,
+        255,
+        283,
+        285,
+        335
+      ],
+      "harmful": [
+        26
+      ],
+      "pollutants": [
+        27
+      ],
+      "including": [
+        28
+      ],
+      "hydrocarbons,": [
+        29
+      ],
+      "CO,": [
+        30
+      ],
+      "PM,": [
+        31
+      ],
+      "NOx.": [
+        33
+      ],
+      "To": [
+        34
+      ],
+      "reduce": [
+        35
+      ],
+      "GHG": [
+        36
+      ],
+      "emissions,": [
+        37
+      ],
+      "hydrogen": [
+        38
+      ],
+      "can": [
+        39
+      ],
+      "be": [
+        40,
+        278
+      ],
+      "added": [
+        41
+      ],
+      "the": [
+        43,
+        70,
+        73,
+        82,
+        164,
+        179,
+        187,
+        208,
+        222,
+        225,
+        232,
+        236,
+        239,
+        259,
+        263,
+        281,
+        286,
+        291,
+        296,
+        303,
+        320,
+        352,
+        356,
+        369,
+        375,
+        391
+      ],
+      "intake": [
+        44
+      ],
+      "air,": [
+        45
+      ],
+      "reducing": [
+        46
+      ],
+      "diesel": [
+        47,
+        110,
+        144,
+        304
+      ],
+      "consumption": [
+        48
+      ],
+      "CO2": [
+        50
+      ],
+      "emissions.": [
+        51
+      ],
+      "The": [
+        52,
+        117,
+        137,
+        267,
+        330,
+        349,
+        378
+      ],
+      "hydrogen-diesel": [
+        53
+      ],
+      "dual": [
+        54
+      ],
+      "fuel": [
+        55
+      ],
+      "(H2-DF)": [
+        56
+      ],
+      "combustion": [
+        57
+      ],
+      "impact": [
+        58,
+        83
+      ],
+      "composition": [
+        60,
+        182
+      ],
+      "temperature.": [
+        62
+      ],
+      "This": [
+        63
+      ],
+      "study": [
+        64
+      ],
+      "investigates": [
+        65
+      ],
+      "how": [
+        66
+      ],
+      "these": [
+        67
+      ],
+      "changes": [
+        68
+      ],
+      "influence": [
+        69,
+        387
+      ],
+      "performance": [
+        71,
+        192,
+        337
+      ],
+      "EATS": [
+        74,
+        87,
+        118,
+        223,
+        261,
+        357
+      ],
+      "a": [
+        76,
+        90,
+        95,
+        105,
+        121,
+        126,
+        132
+      ],
+      "truck": [
+        79
+      ],
+      "application.To": [
+        80
+      ],
+      "assess": [
+        81,
+        174
+      ],
+      "H2-DF": [
+        85,
+        112,
+        146,
+        297,
+        326
+      ],
+      "on": [
+        86,
+        104
+      ],
+      "system": [
+        88,
+        101,
+        249,
+        347
+      ],
+      "Freightliner": [
+        91
+      ],
+      "Cascadia": [
+        92
+      ],
+      "equipped": [
+        93
+      ],
+      "with": [
+        94,
+        148
+      ],
+      "Hydra": [
+        96
+      ],
+      "Energy": [
+        97
+      ],
+      "Corp.": [
+        98
+      ],
+      "co-combustion": [
+        99
+      ],
+      "fueling": [
+        100
+      ],
+      "was": [
+        102,
+        139,
+        166,
+        293,
+        322,
+        358
+      ],
+      "tested": [
+        103,
+        140
+      ],
+      "chassis": [
+        106
+      ],
+      "dynamometer": [
+        107
+      ],
+      "both": [
+        109,
+        142
+      ],
+      "modes": [
+        113
+      ],
+      "under": [
+        114,
+        141,
+        390
+      ],
+      "steady-state": [
+        115,
+        212
+      ],
+      "conditions.": [
+        116,
+        213,
+        394
+      ],
+      "consisted": [
+        119
+      ],
+      "oxidation": [
+        123
+      ],
+      "catalyst": [
+        124
+      ],
+      "(DOC),": [
+        125
+      ],
+      "Particulate": [
+        128
+      ],
+      "Filter": [
+        129
+      ],
+      "(DPF),": [
+        130
+      ],
+      "Selective": [
+        133
+      ],
+      "Catalytic": [
+        134
+      ],
+      "Reduction": [
+        135
+      ],
+      "(SCR).": [
+        136
+      ],
+      "vehicle": [
+        138
+      ],
+      "conventional": [
+        143
+      ],
+      "operation,": [
+        147
+      ],
+      "constant": [
+        149
+      ],
+      "engine": [
+        150,
+        209,
+        264
+      ],
+      "speed": [
+        151
+      ],
+      "1200": [
+        153
+      ],
+      "RPM": [
+        154
+      ],
+      "200": [
+        156
+      ],
+      "N-m": [
+        157
+      ],
+      "shaft": [
+        158
+      ],
+      "torque.": [
+        159
+      ],
+      "A": [
+        160
+      ],
+      "corresponding": [
+        161
+      ],
+      "model": [
+        162,
+        379
+      ],
+      "SCR": [
+        165,
+        237,
+        321,
+        336,
+        376
+      ],
+      "developed": [
+        167
+      ],
+      "1-D": [
+        169
+      ],
+      "simulation": [
+        170
+      ],
+      "tool": [
+        171
+      ],
+      "GT-SUITE": [
+        172
+      ],
+      "key": [
+        175
+      ],
+      "sensitivity": [
+        176,
+        334
+      ],
+      "factors": [
+        177,
+        385
+      ],
+      "at": [
+        178,
+        374
+      ],
+      "temperatures,": [
+        181,
+        250
+      ],
+      "flow": [
+        184
+      ],
+      "rate": [
+        185
+      ],
+      "from": [
+        186
+      ],
+      "experimental": [
+        188,
+        392
+      ],
+      "testing.Aftertreatment": [
+        189
+      ],
+      "conditions": [
+        190,
+        243
+      ],
+      "data": [
+        193
+      ],
+      "were": [
+        194,
+        215,
+        275
+      ],
+      "collected": [
+        195
+      ],
+      "using": [
+        196,
+        224
+      ],
+      "on-vehicle": [
+        197
+      ],
+      "NOx": [
+        198,
+        228,
+        269,
+        273,
+        317,
+        388
+      ],
+      "temperature": [
+        200
+      ],
+      "sensors": [
+        201,
+        229,
+        270
+      ],
+      "dedicated": [
+        203
+      ],
+      "FTIR": [
+        204,
+        240,
+        272
+      ],
+      "equipment": [
+        206
+      ],
+      "when": [
+        207
+      ],
+      "operation": [
+        210
+      ],
+      "reached": [
+        211,
+        265
+      ],
+      "Emissions": [
+        214
+      ],
+      "measured": [
+        216
+      ],
+      "either": [
+        217
+      ],
+      "upstream": [
+        218
+      ],
+      "or": [
+        219
+      ],
+      "downstream": [
+        220
+      ],
+      "FTIR.": [
+        226
+      ],
+      "On-vehicle": [
+        227
+      ],
+      "located": [
+        230
+      ],
+      "before": [
+        231
+      ],
+      "DOC": [
+        233,
+        292,
+        310
+      ],
+      "after": [
+        235,
+        262
+      ],
+      "supplemented": [
+        238
+      ],
+      "measurements.The": [
+        241
+      ],
+      "low-load": [
+        242
+      ],
+      "led": [
+        244
+      ],
+      "relatively": [
+        246
+      ],
+      "low": [
+        247
+      ],
+      "leading": [
+        251
+      ],
+      "stabilization": [
+        253,
+        353
+      ],
+      "times": [
+        254
+      ],
+      "5-8": [
+        256
+      ],
+      "minutes": [
+        257
+      ],
+      "for": [
+        258,
+        302,
+        325,
+        355
+      ],
+      "full": [
+        260
+      ],
+      "steady-state.": [
+        266
+      ],
+      "onboard": [
+        268
+      ],
+      "results": [
+        274,
+        332,
+        380
+      ],
+      "found": [
+        276
+      ],
+      "comparable": [
+        279
+      ],
+      "within": [
+        280
+      ],
+      "range": [
+        282
+      ],
+      "uncertainty": [
+        284
+      ],
+      "instruments.": [
+        287
+      ],
+      "Temperature": [
+        288
+      ],
+      "rise": [
+        289
+      ],
+      "across": [
+        290,
+        319
+      ],
+      "50-60oC": [
+        294
+      ],
+      "case,": [
+        298
+      ],
+      "significantly": [
+        299
+      ],
+      "higher": [
+        300,
+        324
+      ],
+      "than": [
+        301,
+        327
+      ],
+      "only": [
+        305
+      ],
+      "case": [
+        306
+      ],
+      "(~10oC),": [
+        307
+      ],
+      "indicating": [
+        308
+      ],
+      "enhanced": [
+        309
+      ],
+      "activity": [
+        311
+      ],
+      "likely": [
+        312
+      ],
+      "H2": [
+        315
+      ],
+      "slip.": [
+        316
+      ],
+      "conversion": [
+        318,
+        389
+      ],
+      "slightly": [
+        323
+      ],
+      "diesel,": [
+        329
+      ],
+      "modelling": [
+        331
+      ],
+      "demonstrated": [
+        333
+      ],
+      "stored": [
+        339,
+        367
+      ],
+      "ammonia,": [
+        340
+      ],
+      "urea": [
+        341
+      ],
+      "dosing": [
+        342
+      ],
+      "rate,": [
+        343
+      ],
+      "NO2/NO": [
+        344,
+        372
+      ],
+      "ratio,": [
+        345
+      ],
+      "temperatures.": [
+        348
+      ],
+      "variability": [
+        350
+      ],
+      "time": [
+        354
+      ],
+      "attributed": [
+        359
+      ],
+      "differences": [
+        361
+      ],
+      "prior": [
+        363
+      ],
+      "operating": [
+        364,
+        393
+      ],
+      "condition,": [
+        365
+      ],
+      "ammonia": [
+        366
+      ],
+      "catalyst,": [
+        370
+      ],
+      "ratio": [
+        373
+      ],
+      "inlet.": [
+        377
+      ],
+      "showed": [
+        381
+      ],
+      "that": [
+        382
+      ],
+      "all": [
+        383
+      ],
+      "three": [
+        384
+      ],
+      "strongly": [
+        386
+      ]
+    },
+    "abstractSha256": "fe3f5c53e4ead79430d3fcb904b26fff4314d222480876b9a8bd4c896bc8426f",
+    "retrievedAt": "2026-10-03"
+  },
+  {
     "doi": "10.4271/2024-01-5041",
     "title": "Unified Diagnostics Off-board Tool Development Testing",
     "publisher": "SAE technical papers on CD-ROM/SAE technical paper series",
@@ -699,622 +2815,6 @@
     "retrievedAt": "2026-09-26"
   },
   {
-    "doi": "10.3390/atmos15080997",
-    "title": "Recent Advances in SCR Systems of Heavy-Duty Diesel Vehicles—Low-Temperature NOx Reduction Technology and Combination of SCR with Remote OBD",
-    "publisher": "Atmosphere",
-    "authors": [
-      "Zhengguo Chen",
-      "Qingyang Liu",
-      "Haoye Liu"
-    ],
-    "institution": "Tianjin University",
-    "year": 2024,
-    "publishedDate": "2024-08-20",
-    "originalUrl": "https://doi.org/10.3390/atmos15080997",
-    "metadataUrl": "https://api.openalex.org/works/W4401976376",
-    "abstractInvertedIndex": {
-      "Heavy-duty": [
-        0
-      ],
-      "diesel": [
-        1,
-        31
-      ],
-      "vehicles": [
-        2,
-        41
-      ],
-      "are": [
-        3,
-        222
-      ],
-      "a": [
-        4,
-        21,
-        47,
-        142
-      ],
-      "significant": [
-        5
-      ],
-      "source": [
-        6
-      ],
-      "of": [
-        7,
-        66,
-        94,
-        109,
-        124,
-        131,
-        171,
-        187
-      ],
-      "nitrogen": [
-        8
-      ],
-      "oxides": [
-        9
-      ],
-      "(NOx)": [
-        10
-      ],
-      "in": [
-        11,
-        42,
-        154,
-        252
-      ],
-      "the": [
-        12,
-        63,
-        67,
-        80,
-        87,
-        107,
-        122,
-        125,
-        129,
-        152,
-        158,
-        169,
-        185,
-        212,
-        245
-      ],
-      "atmosphere.": [
-        13
-      ],
-      "The": [
-        14
-      ],
-      "Selective": [
-        15
-      ],
-      "Catalytic": [
-        16
-      ],
-      "Reduction": [
-        17
-      ],
-      "(SCR)": [
-        18
-      ],
-      "system": [
-        19,
-        69,
-        148
-      ],
-      "is": [
-        20,
-        46
-      ],
-      "primary": [
-        22
-      ],
-      "aftertreatment": [
-        23
-      ],
-      "device": [
-        24
-      ],
-      "for": [
-        25,
-        39,
-        136,
-        184,
-        224,
-        258
-      ],
-      "reducing": [
-        26,
-        51
-      ],
-      "NOx": [
-        27,
-        36,
-        52,
-        103,
-        119,
-        198
-      ],
-      "emissions": [
-        28,
-        53,
-        199
-      ],
-      "from": [
-        29,
-        79,
-        200
-      ],
-      "heavy-duty": [
-        30,
-        40,
-        201
-      ],
-      "vehicles.": [
-        32
-      ],
-      "With": [
-        33
-      ],
-      "increasingly": [
-        34
-      ],
-      "stringent": [
-        35
-      ],
-      "emission": [
-        37,
-        213
-      ],
-      "regulations": [
-        38
-      ],
-      "major": [
-        43
-      ],
-      "countries,": [
-        44
-      ],
-      "there": [
-        45
-      ],
-      "growing": [
-        48
-      ],
-      "focus": [
-        49
-      ],
-      "on": [
-        50,
-        98,
-        244
-      ],
-      "under": [
-        54,
-        179
-      ],
-      "low": [
-        55
-      ],
-      "exhaust": [
-        56,
-        155,
-        181
-      ],
-      "temperature": [
-        57,
-        144,
-        156
-      ],
-      "conditions,": [
-        58
-      ],
-      "as": [
-        59,
-        61
-      ],
-      "well": [
-        60
-      ],
-      "monitoring": [
-        62
-      ],
-      "conversion": [
-        64,
-        139
-      ],
-      "efficiency": [
-        65,
-        140
-      ],
-      "SCR": [
-        68,
-        95,
-        110,
-        147,
-        159,
-        188,
-        226,
-        253,
-        263
-      ],
-      "over": [
-        70
-      ],
-      "its": [
-        71
-      ],
-      "entire": [
-        72
-      ],
-      "lifecycle.": [
-        73
-      ],
-      "By": [
-        74
-      ],
-      "reviewing": [
-        75
-      ],
-      "relevant": [
-        76
-      ],
-      "literature": [
-        77
-      ],
-      "mainly": [
-        78
-      ],
-      "past": [
-        81
-      ],
-      "five": [
-        82
-      ],
-      "years,": [
-        83
-      ],
-      "this": [
-        84
-      ],
-      "paper": [
-        85
-      ],
-      "reviews": [
-        86
-      ],
-      "development": [
-        88,
-        250
-      ],
-      "trends": [
-        89
-      ],
-      "and": [
-        90,
-        106,
-        163,
-        210,
-        249
-      ],
-      "related": [
-        91
-      ],
-      "research": [
-        92,
-        247,
-        260
-      ],
-      "results": [
-        93,
-        123
-      ],
-      "technology,": [
-        96,
-        121
-      ],
-      "focusing": [
-        97
-      ],
-      "two": [
-        99
-      ],
-      "main": [
-        100
-      ],
-      "aspects:": [
-        101
-      ],
-      "low-temperature": [
-        102,
-        118,
-        180
-      ],
-      "reduction": [
-        104,
-        120
-      ],
-      "technology": [
-        105
-      ],
-      "combination": [
-        108,
-        130,
-        186
-      ],
-      "systems": [
-        111,
-        189,
-        221
-      ],
-      "with": [
-        112,
-        190,
-        236
-      ],
-      "remote": [
-        113,
-        191,
-        193
-      ],
-      "On-Board": [
-        114
-      ],
-      "Diagnostics": [
-        115
-      ],
-      "(OBD).": [
-        116
-      ],
-      "Regarding": [
-        117
-      ],
-      "review": [
-        126,
-        240
-      ],
-      "indicate": [
-        127
-      ],
-      "that": [
-        128
-      ],
-      "multiple": [
-        132
-      ],
-      "catalytic": [
-        133
-      ],
-      "shows": [
-        134
-      ],
-      "potential": [
-        135
-      ],
-      "achieving": [
-        137
-      ],
-      "high": [
-        138
-      ],
-      "across": [
-        141
-      ],
-      "wide": [
-        143
-      ],
-      "range;": [
-        145
-      ],
-      "advanced": [
-        146,
-        262
-      ],
-      "arrangement": [
-        149
-      ],
-      "can": [
-        150,
-        166,
-        195
-      ],
-      "accelerate": [
-        151
-      ],
-      "increase": [
-        153
-      ],
-      "within": [
-        157
-      ],
-      "system;": [
-        160
-      ],
-      "solid": [
-        161
-      ],
-      "ammonium": [
-        162
-      ],
-      "gaseous": [
-        164
-      ],
-      "reductants": [
-        165
-      ],
-      "effectively": [
-        167
-      ],
-      "address": [
-        168
-      ],
-      "issue": [
-        170
-      ],
-      "urea": [
-        172
-      ],
-      "not": [
-        173
-      ],
-      "being": [
-        174
-      ],
-      "able": [
-        175
-      ],
-      "to": [
-        176,
-        207,
-        233
-      ],
-      "be": [
-        177,
-        231
-      ],
-      "injected": [
-        178
-      ],
-      "conditions.": [
-        182
-      ],
-      "As": [
-        183
-      ],
-      "OBD,": [
-        192
-      ],
-      "OBD": [
-        194,
-        220
-      ],
-      "accurately": [
-        196
-      ],
-      "assess": [
-        197
-      ],
-      "vehicles,": [
-        202
-      ],
-      "but": [
-        203,
-        228
-      ],
-      "it": [
-        204
-      ],
-      "needs": [
-        205
-      ],
-      "algorithms": [
-        206,
-        229
-      ],
-      "correct": [
-        208
-      ],
-      "data": [
-        209
-      ],
-      "match": [
-        211
-      ],
-      "testing": [
-        214
-      ],
-      "process": [
-        215
-      ],
-      "required": [
-        216
-      ],
-      "by": [
-        217
-      ],
-      "regulations.": [
-        218
-      ],
-      "Remote": [
-        219
-      ],
-      "crucial": [
-        223
-      ],
-      "detecting": [
-        225
-      ],
-      "tampering,": [
-        227
-      ],
-      "must": [
-        230
-      ],
-      "developed": [
-        232
-      ],
-      "balance": [
-        234
-      ],
-      "accuracy": [
-        235
-      ],
-      "computational": [
-        237
-      ],
-      "efficiency.": [
-        238
-      ],
-      "This": [
-        239
-      ],
-      "provides": [
-        241
-      ],
-      "updated": [
-        242
-      ],
-      "information": [
-        243
-      ],
-      "current": [
-        246
-      ],
-      "status": [
-        248
-      ],
-      "directions": [
-        251
-      ],
-      "technologies,": [
-        254
-      ],
-      "offering": [
-        255
-      ],
-      "valuable": [
-        256
-      ],
-      "insights": [
-        257
-      ],
-      "future": [
-        259
-      ],
-      "into": [
-        261
-      ],
-      "systems.": [
-        264
-      ]
-    },
-    "abstractSha256": "feee9d40501b28811c36e391d816b49ba718c635fc3c8c1baf3eb09009b8f4c0",
-    "retrievedAt": "2026-09-26"
-  },
-  {
     "doi": "10.1109/tvt.2024.3398297",
     "title": "Integrated LKA and DYC Control of Four-Wheel-Independent-Drive Electric Vehicles With a Central-Zonal Electronic and Electrical Architecture",
     "publisher": "IEEE Transactions on Vehicular Technology",
@@ -1788,461 +3288,6 @@
       ]
     },
     "abstractSha256": "a6d44732ed8d189a6af1b728e8921bbba9fec8d35ae6c6571e9b01fe7c90bacf",
-    "retrievedAt": "2026-09-26"
-  },
-  {
-    "doi": "10.3390/machines11020201",
-    "title": "Design and Implementation of SAE J1939 and Modbus Communication Protocols for Electric Vehicle",
-    "publisher": "Machines",
-    "authors": [
-      "Ahmad Alzahrani",
-      "Shriya Makarand Wangikar",
-      "Vairavasundaram Indragandhi"
-    ],
-    "institution": "Najran University",
-    "year": 2023,
-    "publishedDate": "2023-02-01",
-    "originalUrl": "https://doi.org/10.3390/machines11020201",
-    "metadataUrl": "https://api.openalex.org/works/W4318828824",
-    "abstractInvertedIndex": {
-      "The": [
-        0,
-        12,
-        25,
-        95,
-        116,
-        131
-      ],
-      "charging": [
-        1,
-        13,
-        26
-      ],
-      "station": [
-        2,
-        14,
-        27
-      ],
-      "has": [
-        3
-      ],
-      "a": [
-        4,
-        100,
-        171
-      ],
-      "vital": [
-        5
-      ],
-      "role": [
-        6
-      ],
-      "in": [
-        7
-      ],
-      "the": [
-        8,
-        49,
-        60,
-        63,
-        67,
-        74,
-        85,
-        90,
-        104,
-        120,
-        125,
-        160,
-        177,
-        186,
-        189,
-        193,
-        198
-      ],
-      "electric": [
-        9,
-        165,
-        190
-      ],
-      "vehicle": [
-        10,
-        117,
-        166,
-        191
-      ],
-      "sector.": [
-        11
-      ],
-      "provides": [
-        15
-      ],
-      "supply": [
-        16
-      ],
-      "(AC": [
-        17
-      ],
-      "or": [
-        18
-      ],
-      "DC)": [
-        19
-      ],
-      "to": [
-        20,
-        42,
-        102,
-        108,
-        124,
-        137,
-        141
-      ],
-      "vehicles": [
-        21
-      ],
-      "as": [
-        22
-      ],
-      "per": [
-        23
-      ],
-      "requirements.": [
-        24
-      ],
-      "infrastructure": [
-        28
-      ],
-      "includes": [
-        29
-      ],
-      "software": [
-        30
-      ],
-      "and": [
-        31,
-        37,
-        53,
-        66,
-        139,
-        154,
-        158,
-        164,
-        182,
-        192
-      ],
-      "hardware": [
-        32
-      ],
-      "that": [
-        33,
-        45,
-        106
-      ],
-      "ensure": [
-        34
-      ],
-      "energy": [
-        35
-      ],
-      "transfer": [
-        36
-      ],
-      "safety.": [
-        38
-      ],
-      "Communication": [
-        39
-      ],
-      "is": [
-        40,
-        107,
-        195,
-        200
-      ],
-      "mandatory": [
-        41
-      ],
-      "transmit": [
-        43
-      ],
-      "messages": [
-        44
-      ],
-      "contain": [
-        46
-      ],
-      "information": [
-        47,
-        105
-      ],
-      "from": [
-        48,
-        89
-      ],
-      "battery": [
-        50,
-        68,
-        121,
-        167
-      ],
-      "management": [
-        51,
-        69,
-        122,
-        168
-      ],
-      "system": [
-        52,
-        123,
-        169
-      ],
-      "charger.": [
-        54
-      ],
-      "This": [
-        55,
-        71
-      ],
-      "research": [
-        56
-      ],
-      "focuses": [
-        57
-      ],
-      "on": [
-        58,
-        84
-      ],
-      "implementing": [
-        59
-      ],
-      "communication": [
-        61,
-        81,
-        146,
-        156,
-        161,
-        199
-      ],
-      "between": [
-        62,
-        162,
-        188
-      ],
-      "charger": [
-        64,
-        80,
-        126,
-        132,
-        163,
-        194
-      ],
-      "controller": [
-        65,
-        75,
-        127
-      ],
-      "system.": [
-        70
-      ],
-      "paper": [
-        72,
-        150
-      ],
-      "adopts": [
-        73
-      ],
-      "area": [
-        76
-      ],
-      "network": [
-        77,
-        101
-      ],
-      "(CAN)": [
-        78
-      ],
-      "bus": [
-        79,
-        153,
-        179
-      ],
-      "protocol": [
-        82
-      ],
-      "based": [
-        83
-      ],
-      "SAE": [
-        86
-      ],
-      "J1939": [
-        87
-      ],
-      "standard": [
-        88
-      ],
-      "Society": [
-        91
-      ],
-      "of": [
-        92
-      ],
-      "Automotive": [
-        93
-      ],
-      "Engineers.": [
-        94
-      ],
-      "data": [
-        96
-      ],
-      "are": [
-        97
-      ],
-      "transmitted": [
-        98
-      ],
-      "over": [
-        99
-      ],
-      "facilitate": [
-        103
-      ],
-      "be": [
-        109
-      ],
-      "conveyed": [
-        110
-      ],
-      "by": [
-        111
-      ],
-      "an": [
-        112
-      ],
-      "electronic": [
-        113
-      ],
-      "control": [
-        114
-      ],
-      "unit.": [
-        115
-      ],
-      "communicates": [
-        118
-      ],
-      "via": [
-        119
-      ],
-      "using": [
-        128,
-        170,
-        202
-      ],
-      "CAN": [
-        129,
-        152,
-        178
-      ],
-      "communication.": [
-        130
-      ],
-      "power": [
-        133
-      ],
-      "modules": [
-        134
-      ],
-      "with": [
-        135
-      ],
-      "AC": [
-        136
-      ],
-      "DC": [
-        138,
-        140,
-        142
-      ],
-      "converters": [
-        143
-      ],
-      "uses": [
-        144
-      ],
-      "Modbus": [
-        145,
-        155,
-        183
-      ],
-      "protocol.": [
-        147
-      ],
-      "Therefore,": [
-        148
-      ],
-      "this": [
-        149
-      ],
-      "integrates": [
-        151
-      ],
-      "protocols": [
-        157
-      ],
-      "implements": [
-        159
-      ],
-      "cost-effective": [
-        172
-      ],
-      "Arduino": [
-        173
-      ],
-      "UNO": [
-        174
-      ],
-      "micro-controller.": [
-        175
-      ],
-      "Using": [
-        176
-      ],
-      "module": [
-        180,
-        184
-      ],
-      "(MCP2515)": [
-        181
-      ],
-      "(MAX485),": [
-        185
-      ],
-      "distance": [
-        187
-      ],
-      "increased.": [
-        196
-      ],
-      "Finally,": [
-        197
-      ],
-      "validated": [
-        201
-      ],
-      "PCAN": [
-        203
-      ],
-      "View": [
-        204
-      ],
-      "software.": [
-        205
-      ]
-    },
-    "abstractSha256": "2906f4b7805808cdf42a881e875a57546cdb93aa1555cb4a2c5fd541c4ec5adc",
     "retrievedAt": "2026-09-26"
   },
   {
@@ -3538,6 +4583,240 @@
     "retrievedAt": "2026-09-26"
   },
   {
+    "doi": "10.1109/cvci56766.2022.9964780",
+    "title": "Fuel cell bus energy management based on deep reinforcement learning in NGSIM high-speed traffic scenario",
+    "publisher": "2022 6th CAA International Conference on Vehicular Control and Intelligence (CVCI)",
+    "authors": [
+      "Yang Shen",
+      "Fengyan Yi",
+      "Yi Fan"
+    ],
+    "institution": "Shandong Jiaotong University",
+    "year": 2022,
+    "publishedDate": "2022-10-28",
+    "originalUrl": "https://doi.org/10.1109/cvci56766.2022.9964780",
+    "metadataUrl": "https://api.openalex.org/works/W4311416060",
+    "abstractInvertedIndex": {
+      "As": [
+        0
+      ],
+      "a": [
+        1,
+        23
+      ],
+      "new": [
+        2
+      ],
+      "type": [
+        3
+      ],
+      "of": [
+        4,
+        82
+      ],
+      "vehicle": [
+        5
+      ],
+      "power": [
+        6,
+        73
+      ],
+      "system": [
+        7
+      ],
+      "with": [
+        8,
+        44
+      ],
+      "zero": [
+        9
+      ],
+      "emission": [
+        10
+      ],
+      "and": [
+        11,
+        71
+      ],
+      "renewable": [
+        12
+      ],
+      "energy,": [
+        13
+      ],
+      "fuel": [
+        14,
+        24,
+        83
+      ],
+      "cell": [
+        15,
+        25
+      ],
+      "has": [
+        16
+      ],
+      "high": [
+        17
+      ],
+      "research": [
+        18
+      ],
+      "value.": [
+        19
+      ],
+      "In": [
+        20
+      ],
+      "this": [
+        21
+      ],
+      "paper,": [
+        22
+      ],
+      "energy": [
+        26,
+        61
+      ],
+      "management": [
+        27,
+        62
+      ],
+      "strategy": [
+        28,
+        63
+      ],
+      "based": [
+        29
+      ],
+      "on": [
+        30
+      ],
+      "deep": [
+        31
+      ],
+      "reinforcement": [
+        32
+      ],
+      "learning": [
+        33
+      ],
+      "is": [
+        34,
+        49
+      ],
+      "proposed": [
+        35
+      ],
+      "for": [
+        36
+      ],
+      "high-speed": [
+        37,
+        46,
+        54
+      ],
+      "traffic": [
+        38,
+        47
+      ],
+      "scenarios.": [
+        39
+      ],
+      "A": [
+        40
+      ],
+      "bus": [
+        41
+      ],
+      "working": [
+        42
+      ],
+      "condition": [
+        43
+      ],
+      "real": [
+        45,
+        53
+      ],
+      "scenarios": [
+        48
+      ],
+      "obtained": [
+        50
+      ],
+      "through": [
+        51
+      ],
+      "NGSIM's": [
+        52
+      ],
+      "road": [
+        55
+      ],
+      "segment": [
+        56
+      ],
+      "data": [
+        57
+      ],
+      "set": [
+        58
+      ],
+      "screening.": [
+        59
+      ],
+      "The": [
+        60
+      ],
+      "effectively": [
+        64,
+        78
+      ],
+      "reduces": [
+        65
+      ],
+      "the": [
+        66,
+        72,
+        80
+      ],
+      "hydrogen": [
+        67
+      ],
+      "consumption": [
+        68
+      ],
+      "by": [
+        69,
+        75
+      ],
+      "4.21%": [
+        70
+      ],
+      "fluctuation": [
+        74
+      ],
+      "17.2%,": [
+        76
+      ],
+      "which": [
+        77
+      ],
+      "improves": [
+        79
+      ],
+      "durability": [
+        81
+      ],
+      "cells.": [
+        84
+      ]
+    },
+    "abstractSha256": "20e1d009be294a7cd0fb29bb833631d65b2739bf80cd9bbf9fc0a80d477143cc",
+    "retrievedAt": "2026-10-03"
+  },
+  {
     "doi": "10.1016/j.conengprac.2021.104982",
     "title": "A causal supervisory control strategy for optimal control of a heavy-duty Diesel engine with SCR aftertreatment",
     "publisher": "Control Engineering Practice",
@@ -3964,351 +5243,6 @@
     "retrievedAt": "2026-09-26"
   },
   {
-    "doi": "10.1109/tvt.2020.3025627",
-    "title": "Battery-Involved Energy Management for Hybrid Electric Bus Based on Expert-Assistance Deep Deterministic Policy Gradient Algorithm",
-    "publisher": "IEEE Transactions on Vehicular Technology",
-    "authors": [
-      "Jingda Wu",
-      "Zhongbao Wei",
-      "Kailong Liu"
-    ],
-    "institution": "Beijing Institute of Technology",
-    "year": 2020,
-    "publishedDate": "2020-09-21",
-    "originalUrl": "https://doi.org/10.1109/tvt.2020.3025627",
-    "metadataUrl": "https://api.openalex.org/works/W3088335723",
-    "abstractInvertedIndex": {
-      "Energy": [
-        0
-      ],
-      "management": [
-        1,
-        24,
-        100
-      ],
-      "is": [
-        2,
-        57,
-        117
-      ],
-      "an": [
-        3,
-        33,
-        60
-      ],
-      "enabling": [
-        4
-      ],
-      "technique": [
-        5
-      ],
-      "to": [
-        6,
-        67,
-        90,
-        97,
-        123
-      ],
-      "guarantee": [
-        7
-      ],
-      "the": [
-        8,
-        43,
-        50,
-        64,
-        69,
-        75,
-        82,
-        85,
-        88,
-        99,
-        105
-      ],
-      "reliability": [
-        9
-      ],
-      "and": [
-        10,
-        40,
-        73,
-        92,
-        109,
-        135
-      ],
-      "economy": [
-        11
-      ],
-      "of": [
-        12,
-        36,
-        42,
-        78,
-        84,
-        104,
-        132
-      ],
-      "hybrid": [
-        13,
-        28
-      ],
-      "electric": [
-        14,
-        29
-      ],
-      "systems.": [
-        15
-      ],
-      "This": [
-        16
-      ],
-      "paper": [
-        17
-      ],
-      "proposes": [
-        18
-      ],
-      "a": [
-        19,
-        27
-      ],
-      "novel": [
-        20
-      ],
-      "machine": [
-        21
-      ],
-      "learning-based": [
-        22
-      ],
-      "energy": [
-        23
-      ],
-      "strategy": [
-        25,
-        116
-      ],
-      "for": [
-        26,
-        63
-      ],
-      "bus": [
-        30
-      ],
-      "(HEB),": [
-        31
-      ],
-      "with": [
-        32,
-        59
-      ],
-      "emphasized": [
-        34
-      ],
-      "consciousness": [
-        35
-      ],
-      "both": [
-        37
-      ],
-      "thermal": [
-        38,
-        106
-      ],
-      "safety": [
-        39,
-        107
-      ],
-      "degradation": [
-        41,
-        94
-      ],
-      "onboard": [
-        44
-      ],
-      "lithium-ion": [
-        45
-      ],
-      "battery": [
-        46
-      ],
-      "(LIB)": [
-        47
-      ],
-      "system.": [
-        48
-      ],
-      "Firstly,": [
-        49
-      ],
-      "deep": [
-        51
-      ],
-      "deterministic": [
-        52
-      ],
-      "policy": [
-        53
-      ],
-      "gradient": [
-        54
-      ],
-      "(DDPG)": [
-        55
-      ],
-      "algorithm": [
-        56
-      ],
-      "combined": [
-        58
-      ],
-      "expert-assistance": [
-        61
-      ],
-      "system,": [
-        62
-      ],
-      "first": [
-        65
-      ],
-      "time,": [
-        66
-      ],
-      "enhance": [
-        68
-      ],
-      "“cold": [
-        70
-      ],
-      "start”": [
-        71
-      ],
-      "performance": [
-        72
-      ],
-      "optimize": [
-        74
-      ],
-      "power": [
-        76
-      ],
-      "allocation": [
-        77
-      ],
-      "HEB.": [
-        79
-      ],
-      "Secondly,": [
-        80
-      ],
-      "in": [
-        81,
-        102,
-        130
-      ],
-      "framework": [
-        83
-      ],
-      "proposed": [
-        86,
-        115
-      ],
-      "algorithm,": [
-        87
-      ],
-      "penalties": [
-        89
-      ],
-      "over-temperature": [
-        91
-      ],
-      "LIB": [
-        93
-      ],
-      "are": [
-        95
-      ],
-      "embedded": [
-        96
-      ],
-      "improve": [
-        98
-      ],
-      "quality": [
-        101
-      ],
-      "terms": [
-        103,
-        131
-      ],
-      "enforcement": [
-        108
-      ],
-      "overall": [
-        110
-      ],
-      "driving": [
-        111
-      ],
-      "cost": [
-        112
-      ],
-      "reduction.": [
-        113
-      ],
-      "The": [
-        114
-      ],
-      "tested": [
-        118
-      ],
-      "under": [
-        119
-      ],
-      "different": [
-        120
-      ],
-      "road": [
-        121
-      ],
-      "missions": [
-        122
-      ],
-      "validate": [
-        124
-      ],
-      "its": [
-        125
-      ],
-      "superiority": [
-        126
-      ],
-      "over": [
-        127
-      ],
-      "state-of-the-art": [
-        128
-      ],
-      "techniques": [
-        129
-      ],
-      "training": [
-        133
-      ],
-      "efficiency": [
-        134
-      ],
-      "optimization": [
-        136
-      ],
-      "performance.": [
-        137
-      ]
-    },
-    "abstractSha256": "ef005419fbd9e9873c4b76353bea7add8ad0dd653d4e4c655d3536781f7ca5fc",
-    "retrievedAt": "2026-09-26"
-  },
-  {
     "doi": "10.1109/tii.2020.3014599",
     "title": "Battery Thermal- and Health-Constrained Energy Management for Hybrid Electric Bus Based on Soft Actor-Critic DRL Algorithm",
     "publisher": "IEEE Transactions on Industrial Informatics",
@@ -4669,5 +5603,314 @@
     },
     "abstractSha256": "6939d059ce3302c1d55a8b7b27abe98cae2b23ad7204605303f4cb86c28688a4",
     "retrievedAt": "2026-09-26"
+  },
+  {
+    "doi": "10.1088/1742-6596/1549/3/032092",
+    "title": "Design of special vehicle condition monitoring system based on J1939",
+    "publisher": "Journal of Physics Conference Series",
+    "authors": [
+      "Xuan Shao",
+      "Kang Xing-wu",
+      "Xuping Wang"
+    ],
+    "institution": "PLA Rocket Force University of Engineering",
+    "year": 2020,
+    "publishedDate": "2020-06-01",
+    "originalUrl": "https://doi.org/10.1088/1742-6596/1549/3/032092",
+    "metadataUrl": "https://api.openalex.org/works/W3039448446",
+    "abstractInvertedIndex": {
+      "Abstract": [
+        0
+      ],
+      "The": [
+        1,
+        54,
+        92
+      ],
+      "special": [
+        2,
+        39
+      ],
+      "vehicle": [
+        3,
+        83
+      ],
+      "is": [
+        4,
+        19,
+        49
+      ],
+      "one": [
+        5
+      ],
+      "of": [
+        6,
+        25,
+        30,
+        33,
+        38,
+        81,
+        89
+      ],
+      "the": [
+        7,
+        23,
+        26,
+        31,
+        58,
+        69,
+        77,
+        82,
+        86,
+        90,
+        97,
+        100,
+        104,
+        110,
+        113,
+        118,
+        122,
+        128
+      ],
+      "important": [
+        8
+      ],
+      "equipment": [
+        9
+      ],
+      "in": [
+        10,
+        51,
+        63
+      ],
+      "China’s": [
+        11
+      ],
+      "military": [
+        12
+      ],
+      "and": [
+        13,
+        16,
+        84,
+        126
+      ],
+      "aerospace": [
+        14
+      ],
+      "fields,": [
+        15
+      ],
+      "its": [
+        17
+      ],
+      "condition": [
+        18,
+        35,
+        42,
+        79
+      ],
+      "closely": [
+        20
+      ],
+      "related": [
+        21
+      ],
+      "to": [
+        22,
+        75,
+        112
+      ],
+      "success": [
+        24
+      ],
+      "mission.": [
+        27
+      ],
+      "In": [
+        28
+      ],
+      "view": [
+        29
+      ],
+      "lack": [
+        32
+      ],
+      "real-time": [
+        34,
+        78
+      ],
+      "monitoring": [
+        36,
+        43
+      ],
+      "capability": [
+        37
+      ],
+      "vehicles,": [
+        40
+      ],
+      "a": [
+        41
+      ],
+      "system": [
+        44,
+        55,
+        98
+      ],
+      "based": [
+        45
+      ],
+      "on": [
+        46
+      ],
+      "J1939": [
+        47
+      ],
+      "protocol": [
+        48,
+        123
+      ],
+      "designed": [
+        50
+      ],
+      "this": [
+        52
+      ],
+      "paper.": [
+        53
+      ],
+      "communicate": [
+        56
+      ],
+      "with": [
+        57,
+        103
+      ],
+      "Electronic": [
+        59,
+        105
+      ],
+      "Control": [
+        60,
+        106
+      ],
+      "Unit": [
+        61,
+        107
+      ],
+      "(ECU)": [
+        62
+      ],
+      "Controller": [
+        64
+      ],
+      "Area": [
+        65
+      ],
+      "Network": [
+        66
+      ],
+      "(CAN)": [
+        67
+      ],
+      "through": [
+        68,
+        117
+      ],
+      "On": [
+        70
+      ],
+      "Board": [
+        71
+      ],
+      "Diagnostics": [
+        72
+      ],
+      "(OBD)": [
+        73
+      ],
+      "interface": [
+        74
+      ],
+      "obtain": [
+        76
+      ],
+      "data": [
+        80,
+        101,
+        111,
+        124
+      ],
+      "improve": [
+        85
+      ],
+      "active": [
+        87
+      ],
+      "safety": [
+        88
+      ],
+      "vehicle.": [
+        91
+      ],
+      "test": [
+        93
+      ],
+      "results": [
+        94
+      ],
+      "show": [
+        95
+      ],
+      "that": [
+        96
+      ],
+      "realizes": [
+        99,
+        121
+      ],
+      "exchange": [
+        102
+      ],
+      "(ECU),": [
+        108
+      ],
+      "outputs": [
+        109
+      ],
+      "personal": [
+        114
+      ],
+      "computer": [
+        115
+      ],
+      "(PC)": [
+        116
+      ],
+      "serial": [
+        119
+      ],
+      "port,": [
+        120
+      ],
+      "visualization,": [
+        125
+      ],
+      "meets": [
+        127
+      ],
+      "expected": [
+        129
+      ],
+      "design": [
+        130
+      ],
+      "purpose.": [
+        131
+      ]
+    },
+    "abstractSha256": "607fa50d7287dada69b8b6868ac35b1d76a30b3061b64b28c2f9cd623b31cae0",
+    "retrievedAt": "2026-10-03"
   }
 ]
