@@ -2126,7 +2126,7 @@
     ],
     "institution": "COEP Technological University",
     "year": 2024,
-    "publishedDate": "2024-04-07",
+    "publishedDate": "2024-04-08",
     "originalUrl": "https://doi.org/10.4271/2024-01-5041",
     "metadataUrl": "https://api.openalex.org/works/W4394575163",
     "abstractInvertedIndex": {
@@ -5619,298 +5619,295 @@
     "originalUrl": "https://doi.org/10.1088/1742-6596/1549/3/032092",
     "metadataUrl": "https://api.openalex.org/works/W3039448446",
     "abstractInvertedIndex": {
-      "Abstract": [
-        0
-      ],
       "The": [
-        1,
-        54,
-        92
+        0,
+        53,
+        91
       ],
       "special": [
-        2,
-        39
+        1,
+        38
       ],
       "vehicle": [
-        3,
-        83
+        2,
+        82
       ],
       "is": [
-        4,
-        19,
-        49
+        3,
+        18,
+        48
       ],
       "one": [
-        5
+        4
       ],
       "of": [
-        6,
-        25,
-        30,
-        33,
-        38,
-        81,
-        89
+        5,
+        24,
+        29,
+        32,
+        37,
+        80,
+        88
       ],
       "the": [
-        7,
-        23,
-        26,
-        31,
-        58,
-        69,
-        77,
-        82,
-        86,
-        90,
-        97,
-        100,
-        104,
-        110,
-        113,
-        118,
-        122,
-        128
+        6,
+        22,
+        25,
+        30,
+        57,
+        68,
+        76,
+        81,
+        85,
+        89,
+        96,
+        99,
+        103,
+        109,
+        112,
+        117,
+        121,
+        127
       ],
       "important": [
-        8
+        7
       ],
       "equipment": [
-        9
+        8
       ],
       "in": [
-        10,
-        51,
-        63
+        9,
+        50,
+        62
       ],
       "China’s": [
-        11
+        10
       ],
       "military": [
-        12
+        11
       ],
       "and": [
-        13,
-        16,
-        84,
-        126
+        12,
+        15,
+        83,
+        125
       ],
       "aerospace": [
-        14
+        13
       ],
       "fields,": [
-        15
+        14
       ],
       "its": [
-        17
+        16
       ],
       "condition": [
-        18,
-        35,
-        42,
-        79
-      ],
-      "closely": [
-        20
-      ],
-      "related": [
-        21
-      ],
-      "to": [
-        22,
-        75,
-        112
-      ],
-      "success": [
-        24
-      ],
-      "mission.": [
-        27
-      ],
-      "In": [
-        28
-      ],
-      "view": [
-        29
-      ],
-      "lack": [
-        32
-      ],
-      "real-time": [
+        17,
         34,
+        41,
         78
       ],
+      "closely": [
+        19
+      ],
+      "related": [
+        20
+      ],
+      "to": [
+        21,
+        74,
+        111
+      ],
+      "success": [
+        23
+      ],
+      "mission.": [
+        26
+      ],
+      "In": [
+        27
+      ],
+      "view": [
+        28
+      ],
+      "lack": [
+        31
+      ],
+      "real-time": [
+        33,
+        77
+      ],
       "monitoring": [
-        36,
-        43
+        35,
+        42
       ],
       "capability": [
-        37
+        36
       ],
       "vehicles,": [
-        40
+        39
       ],
       "a": [
-        41
+        40
       ],
       "system": [
-        44,
-        55,
-        98
+        43,
+        54,
+        97
       ],
       "based": [
-        45
+        44
       ],
       "on": [
-        46
+        45
       ],
       "J1939": [
-        47
+        46
       ],
       "protocol": [
-        48,
-        123
+        47,
+        122
       ],
       "designed": [
-        50
+        49
       ],
       "this": [
-        52
+        51
       ],
       "paper.": [
-        53
+        52
       ],
       "communicate": [
-        56
+        55
       ],
       "with": [
-        57,
-        103
+        56,
+        102
       ],
       "Electronic": [
+        58,
+        104
+      ],
+      "Control": [
         59,
         105
       ],
-      "Control": [
+      "Unit": [
         60,
         106
       ],
-      "Unit": [
-        61,
-        107
-      ],
       "(ECU)": [
-        62
+        61
       ],
       "Controller": [
-        64
+        63
       ],
       "Area": [
-        65
+        64
       ],
       "Network": [
-        66
+        65
       ],
       "(CAN)": [
-        67
+        66
       ],
       "through": [
-        68,
-        117
-      ],
-      "On": [
-        70
-      ],
-      "Board": [
-        71
-      ],
-      "Diagnostics": [
-        72
-      ],
-      "(OBD)": [
-        73
-      ],
-      "interface": [
-        74
-      ],
-      "obtain": [
-        76
-      ],
-      "data": [
-        80,
-        101,
-        111,
-        124
-      ],
-      "improve": [
-        85
-      ],
-      "active": [
-        87
-      ],
-      "safety": [
-        88
-      ],
-      "vehicle.": [
-        91
-      ],
-      "test": [
-        93
-      ],
-      "results": [
-        94
-      ],
-      "show": [
-        95
-      ],
-      "that": [
-        96
-      ],
-      "realizes": [
-        99,
-        121
-      ],
-      "exchange": [
-        102
-      ],
-      "(ECU),": [
-        108
-      ],
-      "outputs": [
-        109
-      ],
-      "personal": [
-        114
-      ],
-      "computer": [
-        115
-      ],
-      "(PC)": [
+        67,
         116
       ],
-      "serial": [
-        119
+      "On": [
+        69
       ],
-      "port,": [
+      "Board": [
+        70
+      ],
+      "Diagnostics": [
+        71
+      ],
+      "(OBD)": [
+        72
+      ],
+      "interface": [
+        73
+      ],
+      "obtain": [
+        75
+      ],
+      "data": [
+        79,
+        100,
+        110,
+        123
+      ],
+      "improve": [
+        84
+      ],
+      "active": [
+        86
+      ],
+      "safety": [
+        87
+      ],
+      "vehicle.": [
+        90
+      ],
+      "test": [
+        92
+      ],
+      "results": [
+        93
+      ],
+      "show": [
+        94
+      ],
+      "that": [
+        95
+      ],
+      "realizes": [
+        98,
         120
       ],
+      "exchange": [
+        101
+      ],
+      "(ECU),": [
+        107
+      ],
+      "outputs": [
+        108
+      ],
+      "personal": [
+        113
+      ],
+      "computer": [
+        114
+      ],
+      "(PC)": [
+        115
+      ],
+      "serial": [
+        118
+      ],
+      "port,": [
+        119
+      ],
       "visualization,": [
-        125
+        124
       ],
       "meets": [
-        127
+        126
       ],
       "expected": [
-        129
+        128
       ],
       "design": [
-        130
+        129
       ],
       "purpose.": [
-        131
+        130
       ]
     },
-    "abstractSha256": "607fa50d7287dada69b8b6868ac35b1d76a30b3061b64b28c2f9cd623b31cae0",
-    "retrievedAt": "2026-10-03"
+    "abstractSha256": "6bab58cb75dcca7e7e665470f4fab84cfb7accbbef776d0c5ebe0c0ae5be7b78",
+    "retrievedAt": "2026-11-20"
   }
 ]
