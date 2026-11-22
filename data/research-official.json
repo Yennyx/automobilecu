@@ -1095,155 +1095,372 @@
     "originalUrl": "https://doi.org/10.1016/j.ejor.2026.05.046",
     "metadataUrl": "https://api.openalex.org/works/W7163057690",
     "abstractInvertedIndex": {
-      "•": [
+      "The": [
         0,
-        13,
-        22,
-        31,
-        43
+        65
       ],
-      "Chance-constrained": [
+      "adoption": [
         1
       ],
-      "formulation": [
-        2
-      ],
-      "for": [
-        3
-      ],
-      "the": [
-        4
+      "of": [
+        2,
+        137
       ],
       "electric": [
-        5
-      ],
-      "vehicle": [
-        6
-      ],
-      "scheduling": [
-        7
-      ],
-      "problem": [
-        8
-      ],
-      "with": [
-        9,
-        25
-      ],
-      "stochastic": [
-        10,
-        26
-      ],
-      "energy": [
-        11
-      ],
-      "consumption.": [
-        12
-      ],
-      "Battery": [
-        14
-      ],
-      "management": [
-        15
-      ],
-      "guidelines": [
-        16
-      ],
-      "enforced": [
-        17
-      ],
-      "through": [
-        18
-      ],
-      "probabilistic": [
-        19
-      ],
-      "state-of-charge": [
-        20
-      ],
-      "constraints.": [
-        21
-      ],
-      "Branch-and-price": [
-        23
-      ],
-      "algorithm": [
-        24
-      ],
-      "pricing": [
-        27
-      ],
-      "and": [
-        28,
-        39
-      ],
-      "dominance": [
-        29
-      ],
-      "rules.": [
-        30
-      ],
-      "Explicit": [
-        32
-      ],
-      "modeling": [
-        33
-      ],
-      "of": [
-        34
-      ],
-      "nonlinear": [
-        35
-      ],
-      "charging,": [
-        36,
-        38
-      ],
-      "partial": [
-        37
-      ],
-      "charger": [
-        40
-      ],
-      "capacity": [
-        41
-      ],
-      "limits.": [
-        42
-      ],
-      "Stochastic": [
-        44
-      ],
-      "approach": [
-        45
-      ],
-      "reduces": [
-        46
-      ],
-      "operational": [
-        47
-      ],
-      "costs": [
-        48
-      ],
-      "while": [
-        49
-      ],
-      "maintaining": [
-        50
-      ],
-      "battery": [
+        3,
         51
       ],
-      "policy": [
+      "buses": [
+        4
+      ],
+      "introduces": [
+        5
+      ],
+      "challenges": [
+        6,
+        42
+      ],
+      "related": [
+        7
+      ],
+      "to": [
+        8,
+        113,
+        116
+      ],
+      "limited": [
+        9
+      ],
+      "driving": [
+        10
+      ],
+      "range,": [
+        11
+      ],
+      "extended": [
+        12
+      ],
+      "charging": [
+        13
+      ],
+      "times,": [
+        14
+      ],
+      "and": [
+        15,
+        61,
+        103
+      ],
+      "strict": [
+        16
+      ],
+      "battery": [
+        17,
+        24,
+        62,
+        106
+      ],
+      "management": [
+        18,
+        63,
+        107
+      ],
+      "requirements.": [
+        19
+      ],
+      "These": [
+        20
+      ],
+      "requirements—often": [
+        21
+      ],
+      "set": [
+        22
+      ],
+      "by": [
+        23,
+        43,
+        111
+      ],
+      "leasing": [
+        25
+      ],
+      "companies": [
+        26
+      ],
+      "or": [
+        27
+      ],
+      "warranty": [
+        28
+      ],
+      "providers—typically": [
+        29
+      ],
+      "include": [
+        30
+      ],
+      "recommended": [
+        31,
+        70
+      ],
+      "ranges": [
+        32,
+        72
+      ],
+      "for": [
+        33,
+        49,
+        57,
+        146
+      ],
+      "the": [
+        34,
+        50,
+        94
+      ],
+      "battery’s": [
+        35
+      ],
+      "state-of-charge": [
+        36
+      ],
+      "(SoC).": [
+        37
+      ],
+      "This": [
+        38
+      ],
+      "study": [
+        39
+      ],
+      "addresses": [
+        40
+      ],
+      "these": [
+        41
+      ],
+      "proposing": [
+        44
+      ],
+      "a": [
+        45,
+        117,
+        134
+      ],
+      "novel": [
+        46
+      ],
+      "chance-constrained": [
+        47
+      ],
+      "model": [
+        48,
+        66
+      ],
+      "vehicle": [
         52
       ],
-      "compliance.": [
+      "scheduling": [
         53
+      ],
+      "problem": [
+        54
+      ],
+      "that": [
+        55,
+        93,
+        125
+      ],
+      "accounts": [
+        56
+      ],
+      "stochastic": [
+        58,
+        82,
+        95
+      ],
+      "energy": [
+        59,
+        129
+      ],
+      "consumption": [
+        60,
+        130
+      ],
+      "guidelines.": [
+        64
+      ],
+      "ensures": [
+        67
+      ],
+      "compliance": [
+        68,
+        104
+      ],
+      "with": [
+        69,
+        81,
+        105,
+        133
+      ],
+      "SoC": [
+        71,
+        139
+      ],
+      "while": [
+        73
+      ],
+      "optimizing": [
+        74
+      ],
+      "operational": [
+        75,
+        101
+      ],
+      "costs.": [
+        76
+      ],
+      "A": [
+        77
+      ],
+      "tailored": [
+        78
+      ],
+      "branch-and-price": [
+        79
+      ],
+      "heuristic": [
+        80
+      ],
+      "pricing": [
+        83
+      ],
+      "problems": [
+        84
+      ],
+      "is": [
+        85
+      ],
+      "developed.": [
+        86
+      ],
+      "Computational": [
+        87
+      ],
+      "experiments": [
+        88
+      ],
+      "on": [
+        89,
+        127
+      ],
+      "realistic": [
+        90
+      ],
+      "instances": [
+        91
+      ],
+      "show": [
+        92,
+        124
+      ],
+      "approach": [
+        96,
+        144
+      ],
+      "offers": [
+        97
+      ],
+      "good": [
+        98
+      ],
+      "trade-offs": [
+        99
+      ],
+      "between": [
+        100
+      ],
+      "costs": [
+        102,
+        110
+      ],
+      "guidelines,": [
+        108,
+        140
+      ],
+      "reducing": [
+        109
+      ],
+      "up": [
+        112
+      ],
+      "10%": [
+        114
+      ],
+      "compared": [
+        115
+      ],
+      "deterministic": [
+        118
+      ],
+      "worst-case": [
+        119
+      ],
+      "benchmark.": [
+        120
+      ],
+      "In": [
+        121
+      ],
+      "contrast,": [
+        122
+      ],
+      "we": [
+        123
+      ],
+      "relying": [
+        126
+      ],
+      "expected": [
+        128
+      ],
+      "yields": [
+        131
+      ],
+      "solutions": [
+        132
+      ],
+      "near-certain": [
+        135
+      ],
+      "probability": [
+        136
+      ],
+      "violating": [
+        138
+      ],
+      "rendering": [
+        141
+      ],
+      "such": [
+        142
+      ],
+      "an": [
+        143
+      ],
+      "unsuitable": [
+        145
+      ],
+      "practical": [
+        147
+      ],
+      "use.": [
+        148
       ]
     },
-    "abstractSha256": "7845d8b070ef2131b9566c555197d58eb874a2c8b19d2dfa9c83fc93a5215a03",
-    "retrievedAt": "2026-10-03"
+    "abstractSha256": "0d1099690a580fca36d78a2cc6083993f005e50ad13a4492f9003a3aa46abd9f",
+    "retrievedAt": "2026-11-22"
   },
   {
     "doi": "10.82417/g670-1z81",
