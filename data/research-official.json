@@ -1463,876 +1463,6 @@
     "retrievedAt": "2026-11-22"
   },
   {
-    "doi": "10.82417/g670-1z81",
-    "title": "Impact of hydrogen-diesel dual fuel combustion on the performance of aftertreatment system in heavy duty commercial truck",
-    "publisher": "Espace ÉTS (ETS)",
-    "authors": [
-      "Mumtaz, Zarqoon",
-      "Farzam, Reza",
-      "Guan, Mang"
-    ],
-    "institution": null,
-    "year": 2025,
-    "publishedDate": "2025-11-29",
-    "originalUrl": "https://doi.org/10.82417/g670-1z81",
-    "metadataUrl": "https://api.openalex.org/works/W7116117362",
-    "abstractInvertedIndex": {
-      "Diesel": [
-        0,
-        122,
-        127
-      ],
-      "engines": [
-        1
-      ],
-      "are": [
-        2
-      ],
-      "widely": [
-        3
-      ],
-      "used": [
-        4
-      ],
-      "in": [
-        5,
-        75,
-        108,
-        168,
-        295,
-        328,
-        351,
-        362,
-        368
-      ],
-      "heavy-duty": [
-        6,
-        77
-      ],
-      "commercial": [
-        7,
-        78
-      ],
-      "vehicles": [
-        8
-      ],
-      "due": [
-        9,
-        313
-      ],
-      "to": [
-        10,
-        22,
-        42,
-        173,
-        245,
-        252,
-        277,
-        314,
-        338,
-        360
-      ],
-      "their": [
-        11
-      ],
-      "performance,": [
-        12,
-        89
-      ],
-      "efficiency": [
-        13
-      ],
-      "and": [
-        14,
-        32,
-        49,
-        61,
-        111,
-        131,
-        145,
-        155,
-        183,
-        191,
-        199,
-        202,
-        234,
-        271,
-        346,
-        371
-      ],
-      "reliability.": [
-        15
-      ],
-      "They": [
-        16
-      ],
-      "use": [
-        17
-      ],
-      "exhaust": [
-        18,
-        59,
-        180,
-        248
-      ],
-      "aftertreatment": [
-        19
-      ],
-      "systems": [
-        20
-      ],
-      "(EATS)": [
-        21
-      ],
-      "limit": [
-        23
-      ],
-      "emissions": [
-        24,
-        205
-      ],
-      "of": [
-        25,
-        72,
-        84,
-        120,
-        152,
-        163,
-        221,
-        255,
-        283,
-        285,
-        335
-      ],
-      "harmful": [
-        26
-      ],
-      "pollutants": [
-        27
-      ],
-      "including": [
-        28
-      ],
-      "hydrocarbons,": [
-        29
-      ],
-      "CO,": [
-        30
-      ],
-      "PM,": [
-        31
-      ],
-      "NOx.": [
-        33
-      ],
-      "To": [
-        34
-      ],
-      "reduce": [
-        35
-      ],
-      "GHG": [
-        36
-      ],
-      "emissions,": [
-        37
-      ],
-      "hydrogen": [
-        38
-      ],
-      "can": [
-        39
-      ],
-      "be": [
-        40,
-        278
-      ],
-      "added": [
-        41
-      ],
-      "the": [
-        43,
-        70,
-        73,
-        82,
-        164,
-        179,
-        187,
-        208,
-        222,
-        225,
-        232,
-        236,
-        239,
-        259,
-        263,
-        281,
-        286,
-        291,
-        296,
-        303,
-        320,
-        352,
-        356,
-        369,
-        375,
-        391
-      ],
-      "intake": [
-        44
-      ],
-      "air,": [
-        45
-      ],
-      "reducing": [
-        46
-      ],
-      "diesel": [
-        47,
-        110,
-        144,
-        304
-      ],
-      "consumption": [
-        48
-      ],
-      "CO2": [
-        50
-      ],
-      "emissions.": [
-        51
-      ],
-      "The": [
-        52,
-        117,
-        137,
-        267,
-        330,
-        349,
-        378
-      ],
-      "hydrogen-diesel": [
-        53
-      ],
-      "dual": [
-        54
-      ],
-      "fuel": [
-        55
-      ],
-      "(H2-DF)": [
-        56
-      ],
-      "combustion": [
-        57
-      ],
-      "impact": [
-        58,
-        83
-      ],
-      "composition": [
-        60,
-        182
-      ],
-      "temperature.": [
-        62
-      ],
-      "This": [
-        63
-      ],
-      "study": [
-        64
-      ],
-      "investigates": [
-        65
-      ],
-      "how": [
-        66
-      ],
-      "these": [
-        67
-      ],
-      "changes": [
-        68
-      ],
-      "influence": [
-        69,
-        387
-      ],
-      "performance": [
-        71,
-        192,
-        337
-      ],
-      "EATS": [
-        74,
-        87,
-        118,
-        223,
-        261,
-        357
-      ],
-      "a": [
-        76,
-        90,
-        95,
-        105,
-        121,
-        126,
-        132
-      ],
-      "truck": [
-        79
-      ],
-      "application.To": [
-        80
-      ],
-      "assess": [
-        81,
-        174
-      ],
-      "H2-DF": [
-        85,
-        112,
-        146,
-        297,
-        326
-      ],
-      "on": [
-        86,
-        104
-      ],
-      "system": [
-        88,
-        101,
-        249,
-        347
-      ],
-      "Freightliner": [
-        91
-      ],
-      "Cascadia": [
-        92
-      ],
-      "equipped": [
-        93
-      ],
-      "with": [
-        94,
-        148
-      ],
-      "Hydra": [
-        96
-      ],
-      "Energy": [
-        97
-      ],
-      "Corp.": [
-        98
-      ],
-      "co-combustion": [
-        99
-      ],
-      "fueling": [
-        100
-      ],
-      "was": [
-        102,
-        139,
-        166,
-        293,
-        322,
-        358
-      ],
-      "tested": [
-        103,
-        140
-      ],
-      "chassis": [
-        106
-      ],
-      "dynamometer": [
-        107
-      ],
-      "both": [
-        109,
-        142
-      ],
-      "modes": [
-        113
-      ],
-      "under": [
-        114,
-        141,
-        390
-      ],
-      "steady-state": [
-        115,
-        212
-      ],
-      "conditions.": [
-        116,
-        213,
-        394
-      ],
-      "consisted": [
-        119
-      ],
-      "oxidation": [
-        123
-      ],
-      "catalyst": [
-        124
-      ],
-      "(DOC),": [
-        125
-      ],
-      "Particulate": [
-        128
-      ],
-      "Filter": [
-        129
-      ],
-      "(DPF),": [
-        130
-      ],
-      "Selective": [
-        133
-      ],
-      "Catalytic": [
-        134
-      ],
-      "Reduction": [
-        135
-      ],
-      "(SCR).": [
-        136
-      ],
-      "vehicle": [
-        138
-      ],
-      "conventional": [
-        143
-      ],
-      "operation,": [
-        147
-      ],
-      "constant": [
-        149
-      ],
-      "engine": [
-        150,
-        209,
-        264
-      ],
-      "speed": [
-        151
-      ],
-      "1200": [
-        153
-      ],
-      "RPM": [
-        154
-      ],
-      "200": [
-        156
-      ],
-      "N-m": [
-        157
-      ],
-      "shaft": [
-        158
-      ],
-      "torque.": [
-        159
-      ],
-      "A": [
-        160
-      ],
-      "corresponding": [
-        161
-      ],
-      "model": [
-        162,
-        379
-      ],
-      "SCR": [
-        165,
-        237,
-        321,
-        336,
-        376
-      ],
-      "developed": [
-        167
-      ],
-      "1-D": [
-        169
-      ],
-      "simulation": [
-        170
-      ],
-      "tool": [
-        171
-      ],
-      "GT-SUITE": [
-        172
-      ],
-      "key": [
-        175
-      ],
-      "sensitivity": [
-        176,
-        334
-      ],
-      "factors": [
-        177,
-        385
-      ],
-      "at": [
-        178,
-        374
-      ],
-      "temperatures,": [
-        181,
-        250
-      ],
-      "flow": [
-        184
-      ],
-      "rate": [
-        185
-      ],
-      "from": [
-        186
-      ],
-      "experimental": [
-        188,
-        392
-      ],
-      "testing.Aftertreatment": [
-        189
-      ],
-      "conditions": [
-        190,
-        243
-      ],
-      "data": [
-        193
-      ],
-      "were": [
-        194,
-        215,
-        275
-      ],
-      "collected": [
-        195
-      ],
-      "using": [
-        196,
-        224
-      ],
-      "on-vehicle": [
-        197
-      ],
-      "NOx": [
-        198,
-        228,
-        269,
-        273,
-        317,
-        388
-      ],
-      "temperature": [
-        200
-      ],
-      "sensors": [
-        201,
-        229,
-        270
-      ],
-      "dedicated": [
-        203
-      ],
-      "FTIR": [
-        204,
-        240,
-        272
-      ],
-      "equipment": [
-        206
-      ],
-      "when": [
-        207
-      ],
-      "operation": [
-        210
-      ],
-      "reached": [
-        211,
-        265
-      ],
-      "Emissions": [
-        214
-      ],
-      "measured": [
-        216
-      ],
-      "either": [
-        217
-      ],
-      "upstream": [
-        218
-      ],
-      "or": [
-        219
-      ],
-      "downstream": [
-        220
-      ],
-      "FTIR.": [
-        226
-      ],
-      "On-vehicle": [
-        227
-      ],
-      "located": [
-        230
-      ],
-      "before": [
-        231
-      ],
-      "DOC": [
-        233,
-        292,
-        310
-      ],
-      "after": [
-        235,
-        262
-      ],
-      "supplemented": [
-        238
-      ],
-      "measurements.The": [
-        241
-      ],
-      "low-load": [
-        242
-      ],
-      "led": [
-        244
-      ],
-      "relatively": [
-        246
-      ],
-      "low": [
-        247
-      ],
-      "leading": [
-        251
-      ],
-      "stabilization": [
-        253,
-        353
-      ],
-      "times": [
-        254
-      ],
-      "5-8": [
-        256
-      ],
-      "minutes": [
-        257
-      ],
-      "for": [
-        258,
-        302,
-        325,
-        355
-      ],
-      "full": [
-        260
-      ],
-      "steady-state.": [
-        266
-      ],
-      "onboard": [
-        268
-      ],
-      "results": [
-        274,
-        332,
-        380
-      ],
-      "found": [
-        276
-      ],
-      "comparable": [
-        279
-      ],
-      "within": [
-        280
-      ],
-      "range": [
-        282
-      ],
-      "uncertainty": [
-        284
-      ],
-      "instruments.": [
-        287
-      ],
-      "Temperature": [
-        288
-      ],
-      "rise": [
-        289
-      ],
-      "across": [
-        290,
-        319
-      ],
-      "50-60oC": [
-        294
-      ],
-      "case,": [
-        298
-      ],
-      "significantly": [
-        299
-      ],
-      "higher": [
-        300,
-        324
-      ],
-      "than": [
-        301,
-        327
-      ],
-      "only": [
-        305
-      ],
-      "case": [
-        306
-      ],
-      "(~10oC),": [
-        307
-      ],
-      "indicating": [
-        308
-      ],
-      "enhanced": [
-        309
-      ],
-      "activity": [
-        311
-      ],
-      "likely": [
-        312
-      ],
-      "H2": [
-        315
-      ],
-      "slip.": [
-        316
-      ],
-      "conversion": [
-        318,
-        389
-      ],
-      "slightly": [
-        323
-      ],
-      "diesel,": [
-        329
-      ],
-      "modelling": [
-        331
-      ],
-      "demonstrated": [
-        333
-      ],
-      "stored": [
-        339,
-        367
-      ],
-      "ammonia,": [
-        340
-      ],
-      "urea": [
-        341
-      ],
-      "dosing": [
-        342
-      ],
-      "rate,": [
-        343
-      ],
-      "NO2/NO": [
-        344,
-        372
-      ],
-      "ratio,": [
-        345
-      ],
-      "temperatures.": [
-        348
-      ],
-      "variability": [
-        350
-      ],
-      "time": [
-        354
-      ],
-      "attributed": [
-        359
-      ],
-      "differences": [
-        361
-      ],
-      "prior": [
-        363
-      ],
-      "operating": [
-        364,
-        393
-      ],
-      "condition,": [
-        365
-      ],
-      "ammonia": [
-        366
-      ],
-      "catalyst,": [
-        370
-      ],
-      "ratio": [
-        373
-      ],
-      "inlet.": [
-        377
-      ],
-      "showed": [
-        381
-      ],
-      "that": [
-        382
-      ],
-      "all": [
-        383
-      ],
-      "three": [
-        384
-      ],
-      "strongly": [
-        386
-      ]
-    },
-    "abstractSha256": "fe3f5c53e4ead79430d3fcb904b26fff4314d222480876b9a8bd4c896bc8426f",
-    "retrievedAt": "2026-10-03"
-  },
-  {
     "doi": "10.4271/2024-01-5041",
     "title": "Unified Diagnostics Off-board Tool Development Testing",
     "publisher": "SAE technical papers on CD-ROM/SAE technical paper series",
@@ -3965,6 +3095,440 @@
     },
     "abstractSha256": "f83ca7c32728e451b597d0de637317fd9974b5de12bb6aefd423cb25f2955b47",
     "retrievedAt": "2026-09-26"
+  },
+  {
+    "doi": "10.1115/1.4063473",
+    "title": "Data-Based On-Board Diagnostics for Diesel Engine NOx-Reduction Aftertreatment Systems",
+    "publisher": "ASME Letters in Dynamic Systems and Control",
+    "authors": [
+      "Atharva Tandale",
+      "Kaushal Kamal Jain",
+      "Peter H. Meckl"
+    ],
+    "institution": "Cummins (United States)",
+    "year": 2023,
+    "publishedDate": "2023-04-01",
+    "originalUrl": "https://doi.org/10.1115/1.4063473",
+    "metadataUrl": "https://api.openalex.org/works/W4386964365",
+    "abstractInvertedIndex": {
+      "The": [
+        0,
+        101
+      ],
+      "NOx": [
+        1
+      ],
+      "conversion": [
+        2
+      ],
+      "efficiency": [
+        3
+      ],
+      "of": [
+        4,
+        43,
+        80,
+        91,
+        99,
+        135,
+        138
+      ],
+      "a": [
+        5,
+        16,
+        65
+      ],
+      "combined": [
+        6
+      ],
+      "selective": [
+        7
+      ],
+      "catalytic": [
+        8
+      ],
+      "reduction": [
+        9
+      ],
+      "and": [
+        10,
+        122
+      ],
+      "ammonia": [
+        11
+      ],
+      "slip": [
+        12
+      ],
+      "catalyst": [
+        13,
+        48
+      ],
+      "(SCR-ASC)": [
+        14
+      ],
+      "in": [
+        15,
+        36,
+        104,
+        126
+      ],
+      "diesel": [
+        17
+      ],
+      "aftertreatment": [
+        18
+      ],
+      "(AT)": [
+        19
+      ],
+      "system": [
+        20
+      ],
+      "degrades": [
+        21
+      ],
+      "with": [
+        22,
+        64,
+        86
+      ],
+      "time.": [
+        23
+      ],
+      "A": [
+        24
+      ],
+      "novel": [
+        25
+      ],
+      "model-informed": [
+        26
+      ],
+      "data-driven": [
+        27
+      ],
+      "on-board": [
+        28
+      ],
+      "diagnostic": [
+        29
+      ],
+      "(OBD)": [
+        30
+      ],
+      "binary": [
+        31
+      ],
+      "classification": [
+        32,
+        63,
+        89,
+        106,
+        158
+      ],
+      "strategy": [
+        33
+      ],
+      "is": [
+        34
+      ],
+      "proposed": [
+        35
+      ],
+      "this": [
+        37
+      ],
+      "paper": [
+        38
+      ],
+      "to": [
+        39,
+        88
+      ],
+      "distinguish": [
+        40
+      ],
+      "an": [
+        41,
+        96
+      ],
+      "end": [
+        42
+      ],
+      "useful": [
+        44
+      ],
+      "life": [
+        45
+      ],
+      "(EUL)": [
+        46
+      ],
+      "SCR-ASC": [
+        47
+      ],
+      "from": [
+        49,
+        113
+      ],
+      "degreened": [
+        50
+      ],
+      "(DG)": [
+        51
+      ],
+      "ones.": [
+        52
+      ],
+      "An": [
+        53
+      ],
+      "optimized,": [
+        54
+      ],
+      "supervised": [
+        55
+      ],
+      "machine": [
+        56
+      ],
+      "learning": [
+        57
+      ],
+      "model": [
+        58
+      ],
+      "was": [
+        59,
+        93,
+        142
+      ],
+      "used": [
+        60,
+        75,
+        94,
+        143,
+        156
+      ],
+      "for": [
+        61,
+        76,
+        147,
+        157
+      ],
+      "the": [
+        62,
+        139,
+        160
+      ],
+      "calibrated": [
+        66
+      ],
+      "single-cell": [
+        67
+      ],
+      "three-state": [
+        68
+      ],
+      "continuous": [
+        69
+      ],
+      "stirred": [
+        70
+      ],
+      "tank": [
+        71
+      ],
+      "reactor": [
+        72
+      ],
+      "(CSTR)": [
+        73
+      ],
+      "observer": [
+        74
+      ],
+      "state": [
+        77
+      ],
+      "estimation.": [
+        78
+      ],
+      "Percentage": [
+        79
+      ],
+      "samples": [
+        81,
+        134
+      ],
+      "classified": [
+        82
+      ],
+      "as": [
+        83,
+        95,
+        144
+      ],
+      "EUL": [
+        84
+      ],
+      "(%EUL),": [
+        85
+      ],
+      "respect": [
+        87
+      ],
+      "boundary": [
+        90
+      ],
+      "50%,": [
+        92
+      ],
+      "objective": [
+        97
+      ],
+      "criterion": [
+        98
+      ],
+      "classification.": [
+        100,
+        148
+      ],
+      "method": [
+        102
+      ],
+      "resulted": [
+        103
+      ],
+      "87.5%": [
+        105
+      ],
+      "accuracy": [
+        107
+      ],
+      "when": [
+        108
+      ],
+      "tested": [
+        109
+      ],
+      "on": [
+        110
+      ],
+      "eight": [
+        111
+      ],
+      "day-files": [
+        112,
+        117
+      ],
+      "four": [
+        114
+      ],
+      "trucks": [
+        115,
+        153
+      ],
+      "(2": [
+        116
+      ],
+      "per": [
+        118
+      ],
+      "truck;": [
+        119
+      ],
+      "1": [
+        120,
+        123
+      ],
+      "DG": [
+        121
+      ],
+      "EUL)": [
+        124
+      ],
+      "operating": [
+        125,
+        161
+      ],
+      "real-world": [
+        127
+      ],
+      "on-road": [
+        128
+      ],
+      "conditions.": [
+        129
+      ],
+      "Each": [
+        130
+      ],
+      "day-file": [
+        131
+      ],
+      "had": [
+        132
+      ],
+      "∼86,000": [
+        133
+      ],
+      "data.": [
+        136
+      ],
+      "Mileage": [
+        137
+      ],
+      "same": [
+        140
+      ],
+      "truck": [
+        141
+      ],
+      "ground": [
+        145
+      ],
+      "truth": [
+        146
+      ],
+      "However,": [
+        149
+      ],
+      "mileage": [
+        150
+      ],
+      "across": [
+        151,
+        165
+      ],
+      "different": [
+        152
+      ],
+      "cannot": [
+        154
+      ],
+      "be": [
+        155
+      ],
+      "since": [
+        159
+      ],
+      "conditions": [
+        162
+      ],
+      "would": [
+        163
+      ],
+      "vary": [
+        164
+      ],
+      "trucks.": [
+        166
+      ]
+    },
+    "abstractSha256": "1c1bdbd6085cf28ae3b019fa0ed217f7a53ca3740f5fd284505ececdbec5b0fa",
+    "retrievedAt": "2026-11-25"
   },
   {
     "doi": "10.1016/j.geits.2023.100095",
